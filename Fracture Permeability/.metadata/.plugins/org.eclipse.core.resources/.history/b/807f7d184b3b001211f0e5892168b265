@@ -1,0 +1,40 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../src/framework/Matrix.cpp \
+../src/framework/Options.cpp \
+../src/framework/Pore.cpp \
+../src/framework/PoreArray.cpp \
+../src/framework/RandKnuth.cpp \
+../src/framework/Rock.cpp 
+
+OBJS += \
+./src/framework/Matrix.o \
+./src/framework/Options.o \
+./src/framework/Pore.o \
+./src/framework/PoreArray.o \
+./src/framework/RandKnuth.o \
+./src/framework/Rock.o 
+
+CPP_DEPS += \
+./src/framework/Matrix.d \
+./src/framework/Options.d \
+./src/framework/Pore.d \
+./src/framework/PoreArray.d \
+./src/framework/RandKnuth.d \
+./src/framework/Rock.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/framework/%.o: ../src/framework/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0 -gencode arch=compute_20,code=sm_21 -odir "src/framework" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

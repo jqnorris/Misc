@@ -1,0 +1,19 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Feb 8, 2013
+ *      Author: jqnorris
+ */
+
+
+#include <map>
+#include <string>
+#include "RandKnuth.h"
+
+int main()
+{
+	std::multimap<double, std::string> testMap;
+
+
+}
+

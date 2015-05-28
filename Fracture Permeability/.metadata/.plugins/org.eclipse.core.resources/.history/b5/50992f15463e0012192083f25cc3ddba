@@ -1,0 +1,40 @@
+/*
+ * initializePores.cpp
+ *
+ *  Created on: Dec 4, 2012
+ *      Author: jqnorris
+ */
+
+#include "initializePores.h"
+
+namespace initializePores
+{
+void setCurrentVolume(Pore & pore, Options & options)
+{
+	pore.currentVolume=options.v0;
+}
+
+void setNaturalVolume(Pore & pore, Options & options)
+{
+	pore.naturalVolume=options.v0;
+}
+
+void setPressure(Pore & pore, Options & options)
+{
+	pore.pressure=0;
+}
+
+}
+
+
+void initializePores(PoreArray & pores, Matrix & matrix, Options & options)
+{
+	setupPoreNeighbors(pores, matrix, options);
+
+	pores.forAllPores(initializePores::setCurrentVolume,options);
+
+	pores.forAllPores(initializePores::setNaturalVolume,options);
+	pores.pores[1][1].
+
+}
+

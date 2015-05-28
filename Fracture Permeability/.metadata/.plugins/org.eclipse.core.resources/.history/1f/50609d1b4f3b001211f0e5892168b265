@@ -1,0 +1,26 @@
+/*
+ * TestFunctions.h
+ *
+ *  Created on: Nov 30, 2012
+ *      Author: jqnorris
+ */
+
+#ifndef TESTFUNCTIONS_H_
+#define TESTFUNCTIONS_H_
+
+setupMatrixNeighbors(poresSq, matrixSq, optionsSq);
+setupMatrixNeighbors(poresHex, matrixHex, optionsHex);
+
+setupPoreNeighbors(poresSq, matrixSq, optionsSq);
+setupPoreNeighbors(poresHex, matrixHex, optionsHex);
+
+testMatrixForAll(matrixSq, optionsSq);
+testPoreArrayForAll(poresSq, optionsSq);
+testSetupMatrixNeighborsSquareLattice(poresSq, matrixSq, optionsSq);
+testSetupMatrixNeighborsHexLattice(poresHex, matrixHex, optionsHex);
+testSetupPoreNeighborsSquareLattice(poresSq, matrixSq, optionsSq);
+testSetupPoreNeighborsHexLattice(poresHex, matrixHex, optionsHex);
+
+
+
+#endif /* TESTFUNCTIONS_H_ */

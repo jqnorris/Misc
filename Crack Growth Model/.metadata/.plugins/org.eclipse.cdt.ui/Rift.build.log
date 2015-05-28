@@ -1,0 +1,19 @@
+
+**** Build of configuration Debug for project Rift ****
+
+make all 
+Building file: ../src/Simulation.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulation.d" -MT"src/Simulation.d" -o "src/Simulation.o" "../src/Simulation.cpp"
+../src/Simulation.cpp: In function ‘int main()’:
+../src/Simulation.cpp:22:25: error: ‘Options’ cannot appear in a constant-expression
+../src/Simulation.cpp:22:33: error: ‘.’ cannot appear in a constant-expression
+../src/Simulation.cpp:22:42: error: template argument 2 is invalid
+../src/Simulation.cpp:23:4: error: invalid type in declaration before ‘=’ token
+../src/Simulation.cpp:23:32: error: ‘Options’ cannot appear in a constant-expression
+../src/Simulation.cpp:23:40: error: ‘.’ cannot appear in a constant-expression
+../src/Simulation.cpp:23:49: error: template argument 2 is invalid
+../src/Simulation.cpp:22:45: warning: unused variable ‘pArray’ [-Wunused-variable]
+make: *** [src/Simulation.o] Error 1
+
+**** Build Finished ****

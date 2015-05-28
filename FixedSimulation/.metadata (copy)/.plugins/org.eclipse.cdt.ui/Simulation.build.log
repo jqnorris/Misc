@@ -1,0 +1,13 @@
+
+**** Build of configuration Release for project Simulation ****
+
+make all 
+Building file: ../src/simulation/Simulation.cpp
+Invoking: NVCC Compiler
+nvcc -O3  -odir "src/simulation" -M -o "src/simulation/Simulation.d" "../src/simulation/Simulation.cpp"
+In file included from ../src/simulation/Simulation.cpp:8:0:
+../src/simulation/Simulation.h:11:36: fatal error: ../framework/Framework.h: No such file or directory
+compilation terminated.
+make: *** [src/simulation/Simulation.o] Error 1
+
+**** Build Finished ****

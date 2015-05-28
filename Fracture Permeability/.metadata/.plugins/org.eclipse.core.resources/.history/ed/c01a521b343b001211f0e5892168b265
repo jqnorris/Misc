@@ -1,0 +1,49 @@
+/*
+ * simulation.cpp
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+#include <iostream>
+#include "PoreArray.h"
+#include "Matrix.h"
+#include "Options.h"
+#include "SetupMatrixNeighbors.h"
+#include "SetupPoreNeighbors.h"
+#include "TestFunctions.h"
+
+
+int main(void)
+{
+	Options optionsSq, optionsHex;
+
+	optionsSq.v0 = 1;
+	optionsSq.N=5;
+	optionsSq.latticeType=4;
+	optionsSq.E0=0;
+	optionsSq.epsilonY0=0;
+	optionsSq.k0=0;
+	optionsSq.phi0=0;
+
+	optionsHex.v0 = 1;
+	optionsHex.N=5;
+	optionsHex.latticeType=6;
+	optionsHex.E0=0;
+	optionsHex.epsilonY0=0;
+	optionsHex.k0=0;
+	optionsHex.phi0=0;
+
+	PoreArray poresSq(optionsSq), poresHex(optionsHex);
+	Matrix matrixSq(optionsSq),matrixHex(optionsHex);
+	setupMatrixNeighbors(poresSq, matrixSq, optionsSq);
+	setupMatrixNeighbors(poresHex, matrixHex, optionsHex);
+
+	setup
+
+	int a=testMatrixForAll(matrixSq, optionsSq);
+	int b=testPoreArrayForAll(poresSq, optionsSq);
+	int c=testSetupMatrixNeighborsSquareLattice(poresSq, matrixSq, optionsSq);
+	int d=testSetupMatrixNeighborsHexLattice(poresHex, matrixHex, optionsHex);
+
+	return 0;
+}

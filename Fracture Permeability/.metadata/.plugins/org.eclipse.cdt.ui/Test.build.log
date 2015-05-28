@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project Test ****
+
+make all 
+Building file: ../src/simulation/TestFunctions.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src/simulation" -M -o "src/simulation/TestFunctions.d" "../src/simulation/TestFunctions.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/simulation/TestFunctions.o" "../src/simulation/TestFunctions.cpp"
+Finished building: ../src/simulation/TestFunctions.cpp
+ 
+Building target: Test
+Invoking: NVCC Linker
+nvcc  -link -o  "Test"  ./src/simulation/ApplyBoundaryConditions.o ./src/simulation/DamageMatrix.o ./src/simulation/Flow.o ./src/simulation/InitializeMatrix.o ./src/simulation/InitializePores.o ./src/simulation/Simulation.o ./src/simulation/TestFunctions.o  ./src/main.o  ./src/framework/Matrix.o ./src/framework/Options.o ./src/framework/Pore.o ./src/framework/PoreArray.o ./src/framework/RandKnuth.o ./src/framework/Rock.o ./src/framework/SetupMatrixNeighbors.o ./src/framework/SetupPoreNeighbors.o ./src/framework/TestFunctions.o   
+Finished building target: Test
+ 
+
+**** Build Finished ****

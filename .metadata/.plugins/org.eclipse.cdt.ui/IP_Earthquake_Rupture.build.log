@@ -1,0 +1,15 @@
+16:17:25 **** Incremental Build of configuration Release for project IP_Earthquake_Rupture ****
+make all 
+Building file: ../src/IP_Earthquake_Rupture.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/IP_Earthquake_Rupture.d" -MT"src/IP_Earthquake_Rupture.d" -o "src/IP_Earthquake_Rupture.o" "../src/IP_Earthquake_Rupture.cpp"
+Finished building: ../src/IP_Earthquake_Rupture.cpp
+ 
+Building target: IP_Earthquake_Rupture
+Invoking: GCC C++ Linker
+g++  -o "IP_Earthquake_Rupture"  ./src/IP_Earthquake_Rupture.o   
+Finished building target: IP_Earthquake_Rupture
+ 
+
+16:17:28 Build Finished (took 2s.166ms)
+

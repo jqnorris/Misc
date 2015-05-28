@@ -1,0 +1,29 @@
+src/simulationFunctions/ApplyBoundaryConditions.o : ../src/simulationFunctions/ApplyBoundaryConditions.cpp \
+    ../src/simulationFunctions/ApplyBoundaryConditions.h \
+    ../src/simulationFunctions/SimulationFunctions.h \
+    ../src/simulationFunctions/DamageMatrix.h \
+    ../src/simulationFunctions/../framework/Framework.h \
+    ../src/simulationFunctions/../framework/Matrix.h \
+    ../src/simulationFunctions/../framework/Rock.h \
+    ../src/simulationFunctions/../framework/Options.h \
+    ../src/simulationFunctions/../framework/Pore.h \
+    ../src/simulationFunctions/../framework/PoreArray.h \
+    ../src/simulationFunctions/../framework/RandKnuth.h \
+    /usr/include/time.h \
+    /usr/include/features.h \
+    /usr/include/x86_64-linux-gnu/bits/predefs.h \
+    /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+    /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+    /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+    /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+    /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h \
+    /usr/include/x86_64-linux-gnu/bits/time.h \
+    /usr/include/x86_64-linux-gnu/bits/types.h \
+    /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+    /usr/include/x86_64-linux-gnu/bits/timex.h \
+    /usr/include/xlocale.h \
+    ../src/simulationFunctions/../framework/SetupMatrixNeighbors.h \
+    ../src/simulationFunctions/../framework/SetupPoreNeighbors.h \
+    ../src/simulationFunctions/../framework/TestFunctions.h \
+    ../src/simulationFunctions/Flow.h \
+    ../src/simulationFunctions/TestFunctions.h

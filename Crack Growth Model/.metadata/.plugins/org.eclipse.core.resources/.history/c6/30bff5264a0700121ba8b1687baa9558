@@ -1,0 +1,16 @@
+/*
+ * Simulation.cpp
+ *
+ *  Created on: Sep 25, 2012
+ *      Author: jqnorris
+ */
+
+#include "ImportOptions.h"
+#include <string>
+#include <fstream>
+
+int main()
+{
+	importOptions();
+
+}

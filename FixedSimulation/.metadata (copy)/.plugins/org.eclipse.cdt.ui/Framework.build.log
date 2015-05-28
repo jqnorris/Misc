@@ -1,0 +1,7 @@
+
+**** Build of configuration Release for project Framework ****
+
+make all 
+make: *** No rule to make target `src/main.o', needed by `Framework'.  Stop.
+
+**** Build Finished ****

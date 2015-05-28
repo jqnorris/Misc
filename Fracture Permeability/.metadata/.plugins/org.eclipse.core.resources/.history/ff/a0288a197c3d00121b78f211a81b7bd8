@@ -1,0 +1,18 @@
+/*
+ * Flow.cpp
+ *
+ *  Created on: Dec 3, 2012
+ *      Author: jqnorris
+ */
+
+#include "Flow.h"
+#include <cmath>
+
+void flow(Rock & rock, Options & options)
+{
+	if(rock.damage!=0)
+	{
+		float deltaV=rock.pore1->currentVolume-rock.pore1->currentVolume
+	}
+}
+

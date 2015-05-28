@@ -1,0 +1,113 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/Matrix.cpp \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/Options.cpp \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/Pore.cpp \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/PoreArray.cpp \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/RandKnuth.cpp \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/Rock.cpp \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/SetupMatrixNeighbors.cpp \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/SetupPoreNeighbors.cpp \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/TestFunctions.cpp 
+
+OBJS += \
+./framework/Matrix.o \
+./framework/Options.o \
+./framework/Pore.o \
+./framework/PoreArray.o \
+./framework/RandKnuth.o \
+./framework/Rock.o \
+./framework/SetupMatrixNeighbors.o \
+./framework/SetupPoreNeighbors.o \
+./framework/TestFunctions.o 
+
+CPP_DEPS += \
+./framework/Matrix.d \
+./framework/Options.d \
+./framework/Pore.d \
+./framework/PoreArray.d \
+./framework/RandKnuth.d \
+./framework/Rock.d \
+./framework/SetupMatrixNeighbors.d \
+./framework/SetupPoreNeighbors.d \
+./framework/TestFunctions.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+framework/Matrix.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/Matrix.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "framework" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+framework/Options.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/Options.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "framework" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+framework/Pore.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/Pore.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "framework" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+framework/PoreArray.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/PoreArray.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "framework" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+framework/RandKnuth.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/RandKnuth.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "framework" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+framework/Rock.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/Rock.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "framework" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+framework/SetupMatrixNeighbors.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/SetupMatrixNeighbors.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "framework" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+framework/SetupPoreNeighbors.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/SetupPoreNeighbors.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "framework" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+framework/TestFunctions.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Framework/src/framework/TestFunctions.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "framework" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

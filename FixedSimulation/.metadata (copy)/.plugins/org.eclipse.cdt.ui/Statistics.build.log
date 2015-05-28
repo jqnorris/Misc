@@ -1,0 +1,14 @@
+
+**** Build of configuration Release for project Statistics ****
+
+make all 
+Building file: ../src/statistics/Data.cpp
+Invoking: NVCC Compiler
+nvcc -O3  -odir "src/statistics" -M -o "src/statistics/Data.d" "../src/statistics/Data.cpp"
+In file included from ../src/statistics/Data.h:14:0,
+                 from ../src/statistics/Data.cpp:10:
+../src/statistics/../includes/includes.h:11:33: fatal error: framework/Framework.h: No such file or directory
+compilation terminated.
+make: *** [src/statistics/Data.o] Error 1
+
+**** Build Finished ****

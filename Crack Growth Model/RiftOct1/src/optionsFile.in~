@@ -1,0 +1,11 @@
+This is a test
+arraySize=100
+initialGap=1
+deltaGap=1
+externalForce=10
+interactionRange=100
+interactionStrength=0.6
+cohesionStrength=2
+quadraticStrength=0.5
+initialTemperature=100
+boundaryConditions=Periodic

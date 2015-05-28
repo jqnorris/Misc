@@ -1,0 +1,22 @@
+14:30:25 **** Incremental Build of configuration Release for project Percolation ****
+make all 
+Building file: ../src/Lattice.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lattice.d" -MT"src/Lattice.d" -o "src/Lattice.o" "../src/Lattice.cpp"
+../src/Lattice.cpp: In member function ‘void Lattice::invade_bond(Lattice::Bond_id, bool)’:
+../src/Lattice.cpp:262:13: warning: unused variable ‘this_burst_number’ [-Wunused-variable]
+Finished building: ../src/Lattice.cpp
+ 
+Building file: ../src/simulation.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/simulation.d" -MT"src/simulation.d" -o "src/simulation.o" "../src/simulation.cpp"
+Finished building: ../src/simulation.cpp
+ 
+Building target: Percolation
+Invoking: GCC C++ Linker
+g++  -o "Percolation"  ./src/Bond.o ./src/Lattice.o ./src/simulation.o   
+Finished building target: Percolation
+ 
+
+14:30:29 Build Finished (took 4s.351ms)
+

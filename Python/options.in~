@@ -1,0 +1,10 @@
+Testing
+Volume=10
+N=10
+LatticeType=4
+YoungsModulus=0
+YieldStrain=0
+Permeability=0
+Porosity=0
+DeltaVolume=50
+

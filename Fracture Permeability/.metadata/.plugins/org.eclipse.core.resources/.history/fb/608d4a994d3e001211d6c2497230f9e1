@@ -1,0 +1,42 @@
+/*
+ * Options.cpp
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+
+#include "Options.h"
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+#include <cstdio>
+
+using std::cout;
+using std::endl;
+using std::getline;
+
+
+Options::Options()
+{
+
+
+}
+
+Options::~Options()
+{
+
+}
+
+void Options::loadFromFile()
+{
+	int counter=0;
+
+	std::ifstream optionsFile("options.in");
+
+	if(optionsFile.good())
+	{
+		std::cout <<
+	}
+
+
+}

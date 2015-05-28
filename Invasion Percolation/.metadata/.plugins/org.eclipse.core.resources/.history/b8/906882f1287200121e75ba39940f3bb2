@@ -1,0 +1,14 @@
+
+#include "RandKnuth.h"
+#include <iostream>
+#include <fstream>
+
+int main()
+{
+	ofstream toFile("precisionTest.txt");
+
+	toFile.precision(17);
+
+	toFile << randKnuth() << "\n"
+
+

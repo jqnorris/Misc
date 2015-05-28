@@ -1,0 +1,27 @@
+/*
+ * DamageMatrix.cpp
+ *
+ *  Created on: Nov 30, 2012
+ *      Author: jqnorris
+ */
+
+#include "DamageMatrix.h"
+
+void damageMatrix(Pore & pore, Options & options)
+{
+	int a= options.N*randKnuth();
+	int i=0;
+
+	while(i==0)
+	{
+		if ( pore.neighbors[a]->damage != 1)
+		{
+			pore.neighbors[a]->damage=1;
+			i=1;
+		}
+		else
+		{
+			a= 6*randKnuth();
+		};
+	}
+}

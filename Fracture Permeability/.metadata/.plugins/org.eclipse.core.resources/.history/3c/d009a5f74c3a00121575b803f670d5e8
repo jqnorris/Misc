@@ -1,0 +1,25 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../src/Test/rockTest.cpp 
+
+OBJS += \
+./src/Test/rockTest.o 
+
+CPP_DEPS += \
+./src/Test/rockTest.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/Test/%.o: ../src/Test/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "src/Test" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

@@ -1,0 +1,17 @@
+/*
+ * pore.h
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+
+#ifndef PORE_H_
+#define PORE_H_
+
+class pore {
+public:
+	pore();
+	virtual ~pore();
+};
+
+#endif /* PORE_H_ */

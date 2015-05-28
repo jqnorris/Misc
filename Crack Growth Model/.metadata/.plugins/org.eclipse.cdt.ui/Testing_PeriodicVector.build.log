@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project Testing_PeriodicVector ****
+
+make all 
+Building file: ../src/main.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/main.d" "../src/main.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Testing_PeriodicVector
+Invoking: NVCC Linker
+nvcc  -link -o  "Testing_PeriodicVector"  ./src/main.o ./src/periodicVector.o   
+Finished building target: Testing_PeriodicVector
+ 
+
+**** Build Finished ****

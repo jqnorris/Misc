@@ -1,0 +1,26 @@
+/*
+ * rock.cpp
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+
+#include "rock.h"
+#include <cmath>
+
+rock::rock()
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+rock::~rock()
+{
+	// TODO Auto-generated destructor stub
+}
+
+float rock::calcPermeability()
+{
+	float totalPorosity = naturalPorosity+(yieldStrain*damage)/(1+yieldStrain-damage);
+	return 1/180.0*pow(totalPorosity,3)/pow(1-totalPorosity,2);
+}

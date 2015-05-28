@@ -1,0 +1,15 @@
+/*
+ * Flow.cpp
+ *
+ *  Created on: Dec 7, 2012
+ *      Author: jqnorris
+ */
+
+#include "Flow.h"
+
+void flow(Pore & , Options & options)
+{
+	pore.currentVolume=+pore.deltaVolume;
+	pore.deltaVolume=0;
+}
+

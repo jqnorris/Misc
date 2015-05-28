@@ -1,0 +1,16 @@
+/*
+ * initializePores.cpp
+ *
+ *  Created on: Dec 4, 2012
+ *      Author: jqnorris
+ */
+
+#include "initializePores.h"
+
+void initializePores(PoreArray & pores, Matrix & matrix, Options & options)
+{
+	setupPoreNeighbors(pores, matrix, options);
+
+
+}
+

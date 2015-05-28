@@ -1,0 +1,16 @@
+/*
+ * InitializeMatrix.cpp
+ *
+ *  Created on: Dec 4, 2012
+ *      Author: jqnorris
+ */
+
+
+
+
+void initializeMatrix(PoreArray & pores, Matrix & matrix, Options & options)
+{
+
+}
+
+

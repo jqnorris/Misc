@@ -1,0 +1,23 @@
+/*
+ * Pore.h
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+
+#ifndef PORE_H_
+#define PORE_H_
+
+class Rock;
+
+class Pore {
+public:
+	Pore();
+	virtual ~Pore();
+	float naturalVolume;
+	float currentVolume;
+	float pressure;
+	Rock ** neighbors = NULL;
+};
+
+#endif /* PORE_H_ */

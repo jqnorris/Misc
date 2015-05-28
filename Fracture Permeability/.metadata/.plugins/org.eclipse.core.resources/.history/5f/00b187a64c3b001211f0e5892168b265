@@ -1,0 +1,46 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../srcc/framework/Matrix.cpp \
+../srcc/framework/Options.cpp \
+../srcc/framework/Pore.cpp \
+../srcc/framework/PoreArray.cpp \
+../srcc/framework/RandKnuth.cpp \
+../srcc/framework/Rock.cpp \
+../srcc/framework/SetupMatrixNeighbors.cpp \
+../srcc/framework/SetupPoreNeighbors.cpp 
+
+OBJS += \
+./srcc/framework/Matrix.o \
+./srcc/framework/Options.o \
+./srcc/framework/Pore.o \
+./srcc/framework/PoreArray.o \
+./srcc/framework/RandKnuth.o \
+./srcc/framework/Rock.o \
+./srcc/framework/SetupMatrixNeighbors.o \
+./srcc/framework/SetupPoreNeighbors.o 
+
+CPP_DEPS += \
+./srcc/framework/Matrix.d \
+./srcc/framework/Options.d \
+./srcc/framework/Pore.d \
+./srcc/framework/PoreArray.d \
+./srcc/framework/RandKnuth.d \
+./srcc/framework/Rock.d \
+./srcc/framework/SetupMatrixNeighbors.d \
+./srcc/framework/SetupPoreNeighbors.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+srcc/framework/%.o: ../srcc/framework/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "srcc/framework" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

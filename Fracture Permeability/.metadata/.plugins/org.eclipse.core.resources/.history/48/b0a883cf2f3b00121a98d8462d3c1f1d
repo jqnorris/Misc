@@ -1,0 +1,13 @@
+/*
+ * SetupPoreNeighbors.cpp
+ *
+ *  Created on: Nov 30, 2012
+ *      Author: jqnorris
+ */
+
+
+void setupMatrixNeighbors(PoreArray & poreArray, Matrix & matrix, Options & options)
+{
+
+}
+

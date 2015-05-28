@@ -1,0 +1,43 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../src/simulation/ApplyBoundaryConditions.cpp \
+../src/simulation/CalculateFlow.cpp \
+../src/simulation/DamageMatrix.cpp \
+../src/simulation/InitializeMatrix.cpp \
+../src/simulation/InitializePores.cpp \
+../src/simulation/Simulation.cpp \
+../src/simulation/TestFunctions.cpp 
+
+OBJS += \
+./src/simulation/ApplyBoundaryConditions.o \
+./src/simulation/CalculateFlow.o \
+./src/simulation/DamageMatrix.o \
+./src/simulation/InitializeMatrix.o \
+./src/simulation/InitializePores.o \
+./src/simulation/Simulation.o \
+./src/simulation/TestFunctions.o 
+
+CPP_DEPS += \
+./src/simulation/ApplyBoundaryConditions.d \
+./src/simulation/CalculateFlow.d \
+./src/simulation/DamageMatrix.d \
+./src/simulation/InitializeMatrix.d \
+./src/simulation/InitializePores.d \
+./src/simulation/Simulation.d \
+./src/simulation/TestFunctions.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/simulation/%.o: ../src/simulation/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "src/simulation" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

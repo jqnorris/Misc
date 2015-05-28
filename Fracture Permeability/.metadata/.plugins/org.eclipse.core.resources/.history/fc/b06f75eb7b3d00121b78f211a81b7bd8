@@ -1,0 +1,17 @@
+/*
+ * Flow.cpp
+ *
+ *  Created on: Dec 3, 2012
+ *      Author: jqnorris
+ */
+
+#include "Flow.h"
+
+void flow(Rock & rock, Options & options)
+{
+	if(rock.damage!=0)
+	{
+
+	}
+}
+

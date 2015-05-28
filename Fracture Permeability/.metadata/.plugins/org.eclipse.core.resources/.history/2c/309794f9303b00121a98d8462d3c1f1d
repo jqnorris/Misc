@@ -1,0 +1,22 @@
+/*
+ * SetupPoreNeighbors.cpp
+ *
+ *  Created on: Nov 30, 2012
+ *      Author: jqnorris
+ */
+
+
+void setupMatrixNeighbors(PoreArray & poreArray, Matrix & matrix, Options & options)
+{
+	if(options.latticeType==4)
+	{
+		for(int i=0; i<poreArray.dimension; i++)
+		{
+			for(int j=0; j<poreArray.dimension; j++)
+			{
+
+			}
+		}
+	}
+}
+

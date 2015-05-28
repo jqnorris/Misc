@@ -1,0 +1,14 @@
+/*
+ * SetupPoreNeighbors.h
+ *
+ *  Created on: Nov 30, 2012
+ *      Author: jqnorris
+ */
+
+#ifndef SETUPPORENEIGHBORS_H_
+#define SETUPPORENEIGHBORS_H_
+
+void setupPoreNeighbors(PoreArray &, Matrix &, Options &);
+
+
+#endif /* SETUPPORENEIGHBORS_H_ */

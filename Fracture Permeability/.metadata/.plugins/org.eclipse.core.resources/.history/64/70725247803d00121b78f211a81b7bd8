@@ -1,0 +1,28 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../src/simulationFunctions/DamageMatrix.cpp \
+../src/simulationFunctions/Flow.cpp 
+
+OBJS += \
+./src/simulationFunctions/DamageMatrix.o \
+./src/simulationFunctions/Flow.o 
+
+CPP_DEPS += \
+./src/simulationFunctions/DamageMatrix.d \
+./src/simulationFunctions/Flow.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/simulationFunctions/%.o: ../src/simulationFunctions/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "src/simulationFunctions" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

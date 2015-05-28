@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<session version="1" name="RiftSept28" hscale="1.0E-6">
+<executable file="/home/jqnorris/Documents/Fracture/Crack Growth Model/RiftSept28/Debug/RiftSept28" cwd="/home/jqnorris/Documents/Fracture/Crack Growth Model/RiftSept28" args="" launchConfiguration="RiftSept28" timeout="0" profileonstart="true" concurrentkernels="true"><envs></envs></executable>
+<expert></expert>
+<analysis activescope="APPLICATION"></analysis>
+<vruler width="200"/>
+<hruler>
+</hruler>
+<pdm>
+H4sIAAAAAAAAAGNgYWBgZmBgYATSIPD///96ALO+CtcUAAAA</pdm>
+</session>

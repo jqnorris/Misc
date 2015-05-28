@@ -1,0 +1,8 @@
+
+**** Clean-only build of configuration Release for project Framework ****
+
+make clean 
+rm -rf  ./src/main.o  ./src/framework/Matrix.o ./src/framework/Options.o ./src/framework/Pore.o ./src/framework/PoreArray.o ./src/framework/RandKnuth.o ./src/framework/Rock.o ./src/framework/SetupMatrixNeighbors.o ./src/framework/SetupPoreNeighbors.o  ./src/main.d  ./src/framework/Matrix.d ./src/framework/Options.d ./src/framework/Pore.d ./src/framework/PoreArray.d ./src/framework/RandKnuth.d ./src/framework/Rock.d ./src/framework/SetupMatrixNeighbors.d ./src/framework/SetupPoreNeighbors.d  Framework
+ 
+
+**** Build Finished ****

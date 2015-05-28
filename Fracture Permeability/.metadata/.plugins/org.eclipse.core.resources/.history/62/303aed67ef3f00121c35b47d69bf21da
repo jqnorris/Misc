@@ -1,0 +1,33 @@
+/*
+ * simulation.cpp
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+#include <iostream>
+#include "includes/includes.h"
+
+using std::cout;
+using std::endl;
+
+int main(void)
+{
+	Options options;
+
+	options.v0 = 1;
+	options.N=5;
+	options.latticeType=4;
+	options.E0=0;
+	options.epsilonY0=0;
+	options.k0=0;
+	options.phi0=0;
+	options.deltaV0=5;
+
+	PoreArray pores(options);
+
+	Matrix matrix(options);
+
+	Simulation simulation(pores, matrix, options);
+
+	return 0;
+}

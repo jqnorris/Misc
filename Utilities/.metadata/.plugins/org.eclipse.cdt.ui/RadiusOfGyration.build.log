@@ -1,0 +1,17 @@
+
+**** Build of configuration Release for project RadiusOfGyration ****
+
+make all 
+Building file: ../src/main.cpp
+Invoking: NVCC Compiler
+nvcc -O3  -odir "src" -M -o "src/main.d" "../src/main.cpp"
+nvcc -O3 --compile  -x c++ -o  "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: RadiusOfGyration
+Invoking: NVCC Linker
+nvcc  -link -o  "RadiusOfGyration"  ./src/main.o   
+Finished building target: RadiusOfGyration
+ 
+
+**** Build Finished ****

@@ -1,0 +1,5 @@
+Test
+MaxSteps=1000;
+N=10;
+LatticeType=4;
+Trapping=0;

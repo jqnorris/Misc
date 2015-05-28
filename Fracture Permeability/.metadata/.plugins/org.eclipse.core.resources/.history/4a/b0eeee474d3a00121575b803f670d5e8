@@ -1,0 +1,23 @@
+/*
+ * rock.h
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+
+#ifndef ROCK_H_
+#define ROCK_H_
+
+class rock {
+public:
+	rock();
+	virtual ~rock();
+	float permeability;
+	float naturalPorosity;
+	float yieldStrain;
+	float damage;
+	float calcPermeability();
+
+};
+
+#endif /* ROCK_H_ */

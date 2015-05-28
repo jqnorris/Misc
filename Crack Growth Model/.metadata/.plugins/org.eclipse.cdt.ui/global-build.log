@@ -1,0 +1,23 @@
+
+**** Build of configuration Debug for project TestingPBCSpeed ****
+
+make all 
+Building file: ../src/main.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/main.d" "../src/main.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/randKnuth.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/randKnuth.d" "../src/randKnuth.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/randKnuth.o" "../src/randKnuth.cpp"
+Finished building: ../src/randKnuth.cpp
+ 
+Building target: TestingPBCSpeed
+Invoking: NVCC Linker
+nvcc  -link -o  "TestingPBCSpeed"  ./src/main.o ./src/randKnuth.o   
+Finished building target: TestingPBCSpeed
+ 
+
+**** Build Finished ****

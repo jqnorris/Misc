@@ -1,0 +1,49 @@
+/*
+ * InitializeMatrix.cpp
+ *
+ *  Created on: Dec 4, 2012
+ *      Author: jqnorris
+ */
+
+#include "InitializeMatrix.h"
+
+
+namespace initializeMatrixFunctions
+{
+void setDamage(Rock & rock, Options & options)
+{
+	rock.damage=0;
+}
+
+void setNaturalPorosity(Rock & rock, Options & options)
+{
+	rock.naturalPorosity=0;
+}
+
+void setPermeability(Rock & rock, Options & options)
+{
+	rock.permeability=options.phi0;
+}
+
+void setPressure(Rock & rock, Options & options)
+{
+	rock.yieldStrain=options.epsilonY0;
+}
+
+void setYoungsModulus(Rock & rock, Options & options)
+{
+	rock.youngsModulus=options.k0;
+}
+
+}
+
+
+void initializeMatrix(PoreArray & pores, Matrix & matrix, Options & options)
+{
+	setupMatrixNeighbors(pores, matrix, options);
+
+	matrix.forAllRock(initializeMatrixFunctionssetDamage,options);
+
+}
+
+

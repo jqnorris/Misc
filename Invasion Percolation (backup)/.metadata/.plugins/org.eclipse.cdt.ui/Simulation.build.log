@@ -1,0 +1,23 @@
+
+**** Build of configuration Debug for project Simulation ****
+
+make all 
+Building file: ../src/simulation/Simulation.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src/simulation" -M -o "src/simulation/Simulation.d" "../src/simulation/Simulation.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/simulation/Simulation.o" "../src/simulation/Simulation.cpp"
+Finished building: ../src/simulation/Simulation.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/main.d" "../src/main.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Simulation
+Invoking: NVCC Linker
+nvcc  -link -o  "Simulation"  ./src/simulation/DamageMatrix.o ./src/simulation/Simulation.o  ./src/main.o  ./src/framework/Matrix.o ./src/framework/Options.o ./src/framework/Pore.o ./src/framework/PoreArray.o ./src/framework/RandKnuth.o ./src/framework/Rock.o ./src/framework/SetupMatrixNeighbors.o ./src/framework/SetupPoreNeighbors.o   
+Finished building target: Simulation
+ 
+
+**** Build Finished ****

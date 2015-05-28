@@ -1,0 +1,9 @@
+
+#include "RandKnuth.h"
+#include <iostream>
+
+int main()
+{
+	ofstream toFile1("precisionTest.txt");
+
+	toFile2.precision(17);

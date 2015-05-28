@@ -1,0 +1,326 @@
+
+**** Build of configuration Release for project Testing ****
+
+make all 
+Building file: ../src/RandKnuth.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/RandKnuth.d" -MT"src/RandKnuth.d" -o "src/RandKnuth.o" "../src/RandKnuth.cpp"
+Finished building: ../src/RandKnuth.cpp
+ 
+Building target: Testing
+Invoking: GCC C++ Linker
+g++  -o "Testing"  ./src/RandKnuth.o ./src/main.o   
+Finished building target: Testing
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Release for project FirstSimulation ****
+
+make all 
+Building file: ../src/includes/framework/RandKnuth.cpp
+Invoking: NVCC Compiler
+nvcc -O3  -odir "src" -M -o "src/includes/framework/RandKnuth.d" "../src/includes/framework/RandKnuth.cpp"
+nvcc -O3 --compile  -x c++ -o  "src/includes/framework/RandKnuth.o" "../src/includes/framework/RandKnuth.cpp"
+../src/includes/framework/RandKnuth.cpp:20:15: warning: integer constant is so large that it is unsigned [enabled by default]
+../src/includes/framework/RandKnuth.cpp:20:9: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+../src/includes/framework/RandKnuth.cpp:27:31: warning: integer constant is so large that it is unsigned [enabled by default]
+Finished building: ../src/includes/framework/RandKnuth.cpp
+../src/includes/framework/RandKnuth.cpp:27:13: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+ 
+../src/includes/framework/RandKnuth.cpp:33:41: warning: integer constant is so large that it is unsigned [enabled by default]
+Building target: FirstSimulation
+Invoking: NVCC Linker
+nvcc  -link -o  "FirstSimulation"  ./src/main.o  ./src/includes/statistics/Data.o  ./src/includes/simulation/DamageMatrix.o ./src/includes/simulation/Simulation.o  ./src/includes/framework/Matrix.o ./src/includes/framework/Options.o ./src/includes/framework/Pore.o ./src/includes/framework/PoreArray.o ./src/includes/framework/RandKnuth.o ./src/includes/framework/Rock.o ./src/includes/framework/SetupMatrixNeighbors.o ./src/includes/framework/SetupPoreNeighbors.o   
+../src/includes/framework/RandKnuth.cpp:33:17: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+Finished building target: FirstSimulation
+ 
+../src/includes/framework/RandKnuth.cpp:42:23: warning: integer constant is so large that it is unsigned [enabled by default]
+../src/includes/framework/RandKnuth.cpp:42:5: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+../src/includes/framework/RandKnuth.cpp:44:14: warning: integer constant is so large that it is unsigned [enabled by default]
+../src/includes/framework/RandKnuth.cpp:44:5: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+../src/includes/framework/RandKnuth.cpp:45:20: warning: integer constant is so large that it is unsigned [enabled by default]
+../src/includes/framework/RandKnuth.cpp:45:5: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Framework ****
+
+make all 
+Building file: ../src/framework/RandKnuth.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/framework/RandKnuth.d" "../src/framework/RandKnuth.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/framework/RandKnuth.o" "../src/framework/RandKnuth.cpp"
+../src/framework/RandKnuth.cpp:20:15: warning: integer constant is so large that it is unsigned [enabled by default]
+../src/framework/RandKnuth.cpp:20:9: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+Finished building: ../src/framework/RandKnuth.cpp
+../src/framework/RandKnuth.cpp:27:31: warning: integer constant is so large that it is unsigned [enabled by default]
+ 
+../src/framework/RandKnuth.cpp:27:13: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+Building target: Framework
+Invoking: NVCC Linker
+../src/framework/RandKnuth.cpp:33:41: warning: integer constant is so large that it is unsigned [enabled by default]
+nvcc  -link -o  "Framework"  ./src/main.o  ./src/framework/Matrix.o ./src/framework/Options.o ./src/framework/Pore.o ./src/framework/PoreArray.o ./src/framework/RandKnuth.o ./src/framework/Rock.o ./src/framework/SetupMatrixNeighbors.o ./src/framework/SetupPoreNeighbors.o   
+../src/framework/RandKnuth.cpp:33:17: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+../src/framework/RandKnuth.cpp:42:23: warning: integer constant is so large that it is unsigned [enabled by default]
+Finished building target: Framework
+../src/framework/RandKnuth.cpp:42:5: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+ 
+../src/framework/RandKnuth.cpp:44:14: warning: integer constant is so large that it is unsigned [enabled by default]
+../src/framework/RandKnuth.cpp:44:5: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+../src/framework/RandKnuth.cpp:45:20: warning: integer constant is so large that it is unsigned [enabled by default]
+../src/framework/RandKnuth.cpp:45:5: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Simulation ****
+
+make all 
+Building file: ../src/framework/RandKnuth.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/framework/RandKnuth.d" "../src/framework/RandKnuth.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/framework/RandKnuth.o" "../src/framework/RandKnuth.cpp"
+../src/framework/RandKnuth.cpp:20:15: warning: integer constant is so large that it is unsigned [enabled by default]
+../src/framework/RandKnuth.cpp:20:9: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+Finished building: ../src/framework/RandKnuth.cpp
+../src/framework/RandKnuth.cpp:27:31: warning: integer constant is so large that it is unsigned [enabled by default]
+ 
+../src/framework/RandKnuth.cpp:27:13: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+Building target: Simulation
+../src/framework/RandKnuth.cpp:33:41: warning: integer constant is so large that it is unsigned [enabled by default]
+Invoking: NVCC Linker
+../src/framework/RandKnuth.cpp:33:17: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+nvcc  -link -o  "Simulation"  ./src/simulation/DamageMatrix.o ./src/simulation/Simulation.o  ./src/main.o  ./src/framework/Matrix.o ./src/framework/Options.o ./src/framework/Pore.o ./src/framework/PoreArray.o ./src/framework/RandKnuth.o ./src/framework/Rock.o ./src/framework/SetupMatrixNeighbors.o ./src/framework/SetupPoreNeighbors.o   
+../src/framework/RandKnuth.cpp:42:23: warning: integer constant is so large that it is unsigned [enabled by default]
+Finished building target: Simulation
+ 
+../src/framework/RandKnuth.cpp:42:5: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+../src/framework/RandKnuth.cpp:44:14: warning: integer constant is so large that it is unsigned [enabled by default]
+../src/framework/RandKnuth.cpp:44:5: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+../src/framework/RandKnuth.cpp:45:20: warning: integer constant is so large that it is unsigned [enabled by default]
+../src/framework/RandKnuth.cpp:45:5: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Statistics ****
+
+make all 
+Building file: ../src/includes/framework/RandKnuth.cpp
+Invoking: NVCC Compiler
+nvcc -O3  -odir "src" -M -o "src/includes/framework/RandKnuth.d" "../src/includes/framework/RandKnuth.cpp"
+nvcc -O3 --compile  -x c++ -o  "src/includes/framework/RandKnuth.o" "../src/includes/framework/RandKnuth.cpp"
+../src/includes/framework/RandKnuth.cpp:20:15: warning: integer constant is so large that it is unsigned [enabled by default]
+../src/includes/framework/RandKnuth.cpp:20:9: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+../src/includes/framework/RandKnuth.cpp:27:31: warning: integer constant is so large that it is unsigned [enabled by default]
+Finished building: ../src/includes/framework/RandKnuth.cpp
+../src/includes/framework/RandKnuth.cpp:27:13: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+ 
+../src/includes/framework/RandKnuth.cpp:33:41: warning: integer constant is so large that it is unsigned [enabled by default]
+Building target: Statistics
+../src/includes/framework/RandKnuth.cpp:33:17: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+Invoking: NVCC Linker
+../src/includes/framework/RandKnuth.cpp:42:23: warning: integer constant is so large that it is unsigned [enabled by default]
+nvcc  -link -o  "Statistics"  ./src/statistics/Data.o  ./src/main.o  ./src/includes/simulation/DamageMatrix.o ./src/includes/simulation/Simulation.o  ./src/includes/framework/Matrix.o ./src/includes/framework/Options.o ./src/includes/framework/Pore.o ./src/includes/framework/PoreArray.o ./src/includes/framework/RandKnuth.o ./src/includes/framework/Rock.o ./src/includes/framework/SetupMatrixNeighbors.o ./src/includes/framework/SetupPoreNeighbors.o   
+../src/includes/framework/RandKnuth.cpp:42:5: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+Finished building target: Statistics
+ 
+../src/includes/framework/RandKnuth.cpp:44:14: warning: integer constant is so large that it is unsigned [enabled by default]
+../src/includes/framework/RandKnuth.cpp:44:5: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+../src/includes/framework/RandKnuth.cpp:45:20: warning: integer constant is so large that it is unsigned [enabled by default]
+../src/includes/framework/RandKnuth.cpp:45:5: warning: this decimal constant is unsigned only in ISO C90 [enabled by default]
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Testing ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Release for project FirstSimulation ****
+
+make all 
+Building file: ../src/includes/framework/RandKnuth.cpp
+Invoking: NVCC Compiler
+nvcc -O3  -odir "src" -M -o "src/includes/framework/RandKnuth.d" "../src/includes/framework/RandKnuth.cpp"
+nvcc -O3 --compile  -x c++ -o  "src/includes/framework/RandKnuth.o" "../src/includes/framework/RandKnuth.cpp"
+Finished building: ../src/includes/framework/RandKnuth.cpp
+ 
+Building target: FirstSimulation
+Invoking: NVCC Linker
+nvcc  -link -o  "FirstSimulation"  ./src/main.o  ./src/includes/statistics/Data.o  ./src/includes/simulation/DamageMatrix.o ./src/includes/simulation/Simulation.o  ./src/includes/framework/Matrix.o ./src/includes/framework/Options.o ./src/includes/framework/Pore.o ./src/includes/framework/PoreArray.o ./src/includes/framework/RandKnuth.o ./src/includes/framework/Rock.o ./src/includes/framework/SetupMatrixNeighbors.o ./src/includes/framework/SetupPoreNeighbors.o   
+Finished building target: FirstSimulation
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Framework ****
+
+make all 
+Building file: ../src/framework/RandKnuth.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/framework/RandKnuth.d" "../src/framework/RandKnuth.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/framework/RandKnuth.o" "../src/framework/RandKnuth.cpp"
+Finished building: ../src/framework/RandKnuth.cpp
+ 
+Building target: Framework
+Invoking: NVCC Linker
+nvcc  -link -o  "Framework"  ./src/main.o  ./src/framework/Matrix.o ./src/framework/Options.o ./src/framework/Pore.o ./src/framework/PoreArray.o ./src/framework/RandKnuth.o ./src/framework/Rock.o ./src/framework/SetupMatrixNeighbors.o ./src/framework/SetupPoreNeighbors.o   
+Finished building target: Framework
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Simulation ****
+
+make all 
+Building file: ../src/framework/RandKnuth.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/framework/RandKnuth.d" "../src/framework/RandKnuth.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/framework/RandKnuth.o" "../src/framework/RandKnuth.cpp"
+Finished building: ../src/framework/RandKnuth.cpp
+ 
+Building target: Simulation
+Invoking: NVCC Linker
+nvcc  -link -o  "Simulation"  ./src/simulation/DamageMatrix.o ./src/simulation/Simulation.o  ./src/main.o  ./src/framework/Matrix.o ./src/framework/Options.o ./src/framework/Pore.o ./src/framework/PoreArray.o ./src/framework/RandKnuth.o ./src/framework/Rock.o ./src/framework/SetupMatrixNeighbors.o ./src/framework/SetupPoreNeighbors.o   
+Finished building target: Simulation
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Statistics ****
+
+make all 
+Building file: ../src/includes/framework/RandKnuth.cpp
+Invoking: NVCC Compiler
+nvcc -O3  -odir "src" -M -o "src/includes/framework/RandKnuth.d" "../src/includes/framework/RandKnuth.cpp"
+nvcc -O3 --compile  -x c++ -o  "src/includes/framework/RandKnuth.o" "../src/includes/framework/RandKnuth.cpp"
+Finished building: ../src/includes/framework/RandKnuth.cpp
+ 
+Building target: Statistics
+Invoking: NVCC Linker
+nvcc  -link -o  "Statistics"  ./src/statistics/Data.o  ./src/main.o  ./src/includes/simulation/DamageMatrix.o ./src/includes/simulation/Simulation.o  ./src/includes/framework/Matrix.o ./src/includes/framework/Options.o ./src/includes/framework/Pore.o ./src/includes/framework/PoreArray.o ./src/includes/framework/RandKnuth.o ./src/includes/framework/Rock.o ./src/includes/framework/SetupMatrixNeighbors.o ./src/includes/framework/SetupPoreNeighbors.o   
+Finished building target: Statistics
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Testing ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Release for project FirstSimulation ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Framework ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Simulation ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Statistics ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Testing ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Release for project FirstSimulation ****
+
+make all 
+Building file: ../src/main.cpp
+Invoking: NVCC Compiler
+nvcc -O3  -odir "src" -M -o "src/main.d" "../src/main.cpp"
+nvcc -O3 --compile  -x c++ -o  "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: FirstSimulation
+Invoking: NVCC Linker
+nvcc  -link -o  "FirstSimulation"  ./src/main.o  ./src/includes/statistics/Data.o  ./src/includes/simulation/DamageMatrix.o ./src/includes/simulation/Simulation.o  ./src/includes/framework/Matrix.o ./src/includes/framework/Options.o ./src/includes/framework/Pore.o ./src/includes/framework/PoreArray.o ./src/includes/framework/RandKnuth.o ./src/includes/framework/Rock.o ./src/includes/framework/SetupMatrixNeighbors.o ./src/includes/framework/SetupPoreNeighbors.o   
+Finished building target: FirstSimulation
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Framework ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Simulation ****
+
+make all 
+Building file: ../src/simulation/Simulation.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src/simulation" -M -o "src/simulation/Simulation.d" "../src/simulation/Simulation.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/simulation/Simulation.o" "../src/simulation/Simulation.cpp"
+Finished building: ../src/simulation/Simulation.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/main.d" "../src/main.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Simulation
+Invoking: NVCC Linker
+nvcc  -link -o  "Simulation"  ./src/simulation/DamageMatrix.o ./src/simulation/Simulation.o  ./src/main.o  ./src/framework/Matrix.o ./src/framework/Options.o ./src/framework/Pore.o ./src/framework/PoreArray.o ./src/framework/RandKnuth.o ./src/framework/Rock.o ./src/framework/SetupMatrixNeighbors.o ./src/framework/SetupPoreNeighbors.o   
+Finished building target: Simulation
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Statistics ****
+
+make all 
+Building file: ../src/statistics/Data.cpp
+Invoking: NVCC Compiler
+nvcc -O3  -odir "src/statistics" -M -o "src/statistics/Data.d" "../src/statistics/Data.cpp"
+nvcc -O3 --compile  -x c++ -o  "src/statistics/Data.o" "../src/statistics/Data.cpp"
+Finished building: ../src/statistics/Data.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: NVCC Compiler
+nvcc -O3  -odir "src" -M -o "src/main.d" "../src/main.cpp"
+nvcc -O3 --compile  -x c++ -o  "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Statistics
+Invoking: NVCC Linker
+nvcc  -link -o  "Statistics"  ./src/statistics/Data.o  ./src/main.o  ./src/includes/simulation/DamageMatrix.o ./src/includes/simulation/Simulation.o  ./src/includes/framework/Matrix.o ./src/includes/framework/Options.o ./src/includes/framework/Pore.o ./src/includes/framework/PoreArray.o ./src/includes/framework/RandKnuth.o ./src/includes/framework/Rock.o ./src/includes/framework/SetupMatrixNeighbors.o ./src/includes/framework/SetupPoreNeighbors.o   
+Finished building target: Statistics
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Testing ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****

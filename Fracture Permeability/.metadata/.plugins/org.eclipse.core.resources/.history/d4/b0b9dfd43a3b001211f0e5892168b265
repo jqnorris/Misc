@@ -1,0 +1,19 @@
+/*
+ * Pore.cpp
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+
+#include "Pore.h"
+
+Pore::Pore()
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+Pore::~Pore()
+{
+	delete[] neighbors;
+}

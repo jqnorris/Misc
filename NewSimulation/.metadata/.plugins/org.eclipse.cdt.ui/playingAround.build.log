@@ -1,0 +1,8 @@
+
+**** Clean-only build of configuration Release for project playingAround ****
+
+make clean 
+rm -rf  ./src/RandKnuth.o ./src/main.o  ./src/RandKnuth.d ./src/main.d  playingAround
+ 
+
+**** Build Finished ****

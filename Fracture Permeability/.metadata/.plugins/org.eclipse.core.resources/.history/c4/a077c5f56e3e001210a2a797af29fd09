@@ -1,0 +1,91 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Simulation/src/simulation/ApplyBoundaryConditions.cpp \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Simulation/src/simulation/DamageMatrix.cpp \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Simulation/src/simulation/Flow.cpp \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Simulation/src/simulation/InitializeMatrix.cpp \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Simulation/src/simulation/InitializePores.cpp \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Simulation/src/simulation/Simulation.cpp \
+/home/jqnorris/Documents/Permeability/Fracture\ Permeability/Simulation/src/simulation/TestFunctions.cpp 
+
+OBJS += \
+./src/simulation/ApplyBoundaryConditions.o \
+./src/simulation/DamageMatrix.o \
+./src/simulation/Flow.o \
+./src/simulation/InitializeMatrix.o \
+./src/simulation/InitializePores.o \
+./src/simulation/Simulation.o \
+./src/simulation/TestFunctions.o 
+
+CPP_DEPS += \
+./src/simulation/ApplyBoundaryConditions.d \
+./src/simulation/DamageMatrix.d \
+./src/simulation/Flow.d \
+./src/simulation/InitializeMatrix.d \
+./src/simulation/InitializePores.d \
+./src/simulation/Simulation.d \
+./src/simulation/TestFunctions.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/simulation/ApplyBoundaryConditions.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Simulation/src/simulation/ApplyBoundaryConditions.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "src/simulation" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/simulation/DamageMatrix.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Simulation/src/simulation/DamageMatrix.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "src/simulation" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/simulation/Flow.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Simulation/src/simulation/Flow.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "src/simulation" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/simulation/InitializeMatrix.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Simulation/src/simulation/InitializeMatrix.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "src/simulation" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/simulation/InitializePores.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Simulation/src/simulation/InitializePores.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "src/simulation" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/simulation/Simulation.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Simulation/src/simulation/Simulation.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "src/simulation" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/simulation/TestFunctions.o: /home/jqnorris/Documents/Permeability/Fracture\ Permeability/Simulation/src/simulation/TestFunctions.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "src/simulation" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0 --compile  -x c++ -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

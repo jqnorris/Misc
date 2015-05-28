@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project Testing_PeriodicArray ****
+
+make all 
+Building file: ../src/periodicArray.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/periodicArray.d" "../src/periodicArray.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/periodicArray.o" "../src/periodicArray.cpp"
+Finished building: ../src/periodicArray.cpp
+ 
+Building target: Testing_PeriodicArray
+Invoking: NVCC Linker
+nvcc  -link -o  "Testing_PeriodicArray"  ./src/main.o ./src/periodicArray.o   
+Finished building target: Testing_PeriodicArray
+ 
+
+**** Build Finished ****

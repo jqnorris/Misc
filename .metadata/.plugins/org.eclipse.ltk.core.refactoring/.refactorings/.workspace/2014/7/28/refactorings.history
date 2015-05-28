@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;IP_Earthquake_Continuous_ver_0.1&apos; to &apos;IP_Earthquake_Continuous_ver_0.2&apos;" description="Rename resource &apos;IP_Earthquake_Continuous_ver_0.1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/IP_Earthquake_Continuous_ver_0.1" name="IP_Earthquake_Continuous_ver_0.2" stamp="1405207688546" updateReferences="true"/>
+</session>

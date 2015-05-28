@@ -1,0 +1,31 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Feb 8, 2013
+ *      Author: jqnorris
+ */
+
+
+#include <map>
+#include <string>
+#include "RandKnuth.h"
+#include <iostream>
+
+using std::multimap;
+using std::string;
+using std::cout;
+using std::endl;
+
+int main()
+{
+	multimap<double, string> testMap;
+
+	std::map <string, char> grade_list;
+
+	grade_list["John"] = 'B';
+
+	std::cout<<grade_list.begin()->first<<endl;
+
+	return 0;
+}
+

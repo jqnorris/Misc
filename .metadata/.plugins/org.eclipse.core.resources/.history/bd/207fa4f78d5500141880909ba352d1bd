@@ -1,0 +1,23 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Oct 16, 2014
+ *      Author: jqnorris
+ */
+
+
+#include <iostream>
+#include <tuple>
+
+typedef std::pair<long int, long int> Site_coordinates;
+typedef std::tuple<long int, long int, long int> test;
+
+
+int main(int argc, char **argv)
+{
+	std::cout << "Size of pair: " << sizeof(Site_coordinates) << "\n";
+	std::cout << "Size of tuple: " << sizeof(test) << "\n";
+
+	return 0;
+}
+

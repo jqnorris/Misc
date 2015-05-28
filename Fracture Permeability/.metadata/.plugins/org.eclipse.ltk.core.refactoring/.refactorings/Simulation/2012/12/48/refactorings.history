@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TestingSimulationFunctions/srcc&apos; to &apos;src&apos;" description="Rename resource &apos;srcc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="srcc" name="src" stamp="1354321360157" updateReferences="true"/>
+</session>

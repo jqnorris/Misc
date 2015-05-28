@@ -1,0 +1,30 @@
+/*
+ * SetupPoreNeighbors.cpp
+ *
+ *  Created on: Nov 30, 2012
+ *      Author: jqnorris
+ */
+
+#include "SetupPoreNeighbors.h"
+#include "Rock.h"
+
+void setupPoreNeighbors(PoreArray & pores, Matrix & matrix, Options & options)
+{
+	if(options.latticeType==4)
+	{
+		for(int i=0; i<pores.dimension; i++)
+		{
+			for(int j=0; j<pores.dimension; j++)
+			{
+				pores.array[i][j].neighbors = new  Rock*[options.latticeType];
+
+
+				pores.array[i][j].neighbors[1]= & matrix.matrix[i+1][j];
+
+
+			}
+		}
+	}
+}
+}
+

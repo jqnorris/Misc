@@ -1,0 +1,5 @@
+Job1
+MaxSteps=10000
+N=100
+LatticeType=4
+Trapping=0

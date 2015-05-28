@@ -1,0 +1,17 @@
+
+**** Build of configuration Release for project FirstSimulation ****
+
+make all 
+Building file: ../src/includes/simulation/InitializePores.cpp
+Invoking: NVCC Compiler
+nvcc -O3  -odir "src" -M -o "src/includes/simulation/InitializePores.d" "../src/includes/simulation/InitializePores.cpp"
+nvcc -O3 --compile  -x c++ -o  "src/includes/simulation/InitializePores.o" "../src/includes/simulation/InitializePores.cpp"
+Finished building: ../src/includes/simulation/InitializePores.cpp
+ 
+Building target: FirstSimulation
+Invoking: NVCC Linker
+nvcc  -link -o  "FirstSimulation"  ./src/main.o  ./src/includes/statistics/Data.o  ./src/includes/simulation/ApplyBoundaryConditions.o ./src/includes/simulation/DamageMatrix.o ./src/includes/simulation/Flow.o ./src/includes/simulation/InitializeMatrix.o ./src/includes/simulation/InitializePores.o ./src/includes/simulation/Simulation.o ./src/includes/simulation/TestFunctions.o  ./src/includes/framework/Matrix.o ./src/includes/framework/Options.o ./src/includes/framework/Pore.o ./src/includes/framework/PoreArray.o ./src/includes/framework/RandKnuth.o ./src/includes/framework/Rock.o ./src/includes/framework/SetupMatrixNeighbors.o ./src/includes/framework/SetupPoreNeighbors.o ./src/includes/framework/TestFunctions.o   
+Finished building target: FirstSimulation
+ 
+
+**** Build Finished ****

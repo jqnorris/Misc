@@ -1,0 +1,8 @@
+Default
+Volume=1;
+N=5;
+LatticeType=4;
+YoungsModulus=0;
+YieldStrain=0;
+Permeability=0;
+Porosity=0;

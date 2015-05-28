@@ -1,0 +1,71 @@
+
+**** Build of configuration Debug for project TestingSimulationFramwork ****
+
+make all 
+Building file: ../src/main.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/main.d" "../src/main.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/framework/Matrix.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/framework/Matrix.d" "../src/framework/Matrix.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/framework/Matrix.o" "../src/framework/Matrix.cpp"
+Finished building: ../src/framework/Matrix.cpp
+ 
+Building file: ../src/framework/Options.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/framework/Options.d" "../src/framework/Options.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/framework/Options.o" "../src/framework/Options.cpp"
+Finished building: ../src/framework/Options.cpp
+ 
+Building file: ../src/framework/Pore.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/framework/Pore.d" "../src/framework/Pore.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/framework/Pore.o" "../src/framework/Pore.cpp"
+Finished building: ../src/framework/Pore.cpp
+ 
+Building file: ../src/framework/PoreArray.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/framework/PoreArray.d" "../src/framework/PoreArray.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/framework/PoreArray.o" "../src/framework/PoreArray.cpp"
+Finished building: ../src/framework/PoreArray.cpp
+ 
+Building file: ../src/framework/RandKnuth.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/framework/RandKnuth.d" "../src/framework/RandKnuth.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/framework/RandKnuth.o" "../src/framework/RandKnuth.cpp"
+Finished building: ../src/framework/RandKnuth.cpp
+ 
+Building file: ../src/framework/Rock.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/framework/Rock.d" "../src/framework/Rock.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/framework/Rock.o" "../src/framework/Rock.cpp"
+Finished building: ../src/framework/Rock.cpp
+ 
+Building file: ../src/framework/SetupMatrixNeighbors.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/framework/SetupMatrixNeighbors.d" "../src/framework/SetupMatrixNeighbors.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/framework/SetupMatrixNeighbors.o" "../src/framework/SetupMatrixNeighbors.cpp"
+Finished building: ../src/framework/SetupMatrixNeighbors.cpp
+ 
+Building file: ../src/framework/SetupPoreNeighbors.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/framework/SetupPoreNeighbors.d" "../src/framework/SetupPoreNeighbors.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/framework/SetupPoreNeighbors.o" "../src/framework/SetupPoreNeighbors.cpp"
+Finished building: ../src/framework/SetupPoreNeighbors.cpp
+ 
+Building file: ../src/framework/TestFunctions.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/framework/TestFunctions.d" "../src/framework/TestFunctions.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/framework/TestFunctions.o" "../src/framework/TestFunctions.cpp"
+Finished building: ../src/framework/TestFunctions.cpp
+ 
+Building target: TestingSimulationFramwork
+Invoking: NVCC Linker
+nvcc  -link -o  "TestingSimulationFramwork"  ./src/main.o  ./src/framework/Matrix.o ./src/framework/Options.o ./src/framework/Pore.o ./src/framework/PoreArray.o ./src/framework/RandKnuth.o ./src/framework/Rock.o ./src/framework/SetupMatrixNeighbors.o ./src/framework/SetupPoreNeighbors.o ./src/framework/TestFunctions.o   
+Finished building target: TestingSimulationFramwork
+ 
+
+**** Build Finished ****

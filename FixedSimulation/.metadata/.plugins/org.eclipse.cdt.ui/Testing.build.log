@@ -1,0 +1,8 @@
+
+**** Clean-only build of configuration Debug for project Testing ****
+
+make clean 
+rm -rf  ./src/RandKnuth.o ./src/main.o  ./src/RandKnuth.d ./src/main.d  Testing
+ 
+
+**** Build Finished ****

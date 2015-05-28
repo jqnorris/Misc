@@ -1,0 +1,19 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Oct 16, 2014
+ *      Author: jqnorris
+ */
+
+
+#include <stdlib.h>
+typedef std::pair<long int, long int> Site_coordinates;
+
+
+int main(int argc, char **argv)
+{
+	cout << "test";
+
+	return 0;
+}
+

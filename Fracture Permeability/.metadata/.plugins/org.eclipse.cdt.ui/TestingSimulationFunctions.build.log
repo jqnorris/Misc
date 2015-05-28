@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project TestingSimulationFunctions ****
+
+make all 
+Building file: ../src/simulationFunctions/InitializePores.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src/simulationFunctions" -M -o "src/simulationFunctions/InitializePores.d" "../src/simulationFunctions/InitializePores.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/simulationFunctions/InitializePores.o" "../src/simulationFunctions/InitializePores.cpp"
+Finished building: ../src/simulationFunctions/InitializePores.cpp
+ 
+Building target: TestingSimulationFunctions
+Invoking: NVCC Linker
+nvcc  -link -o  "TestingSimulationFunctions"  ./src/simulationFunctions/ApplyBoundaryConditions.o ./src/simulationFunctions/DamageMatrix.o ./src/simulationFunctions/Flow.o ./src/simulationFunctions/InitializePores.o ./src/simulationFunctions/TestFunctions.o  ./src/main.o  ./src/framework/Matrix.o ./src/framework/Options.o ./src/framework/Pore.o ./src/framework/PoreArray.o ./src/framework/RandKnuth.o ./src/framework/Rock.o ./src/framework/SetupMatrixNeighbors.o ./src/framework/SetupPoreNeighbors.o ./src/framework/TestFunctions.o   
+Finished building target: TestingSimulationFunctions
+ 
+
+**** Build Finished ****

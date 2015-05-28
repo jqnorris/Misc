@@ -1,0 +1,21 @@
+11:38:03 **** Incremental Build of configuration Release for project IP_Anisotropy ****
+make all 
+Building file: ../src/simulation.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/simulation.d" -MT"src/simulation.d" -o "src/simulation.o" "../src/simulation.cpp"
+../src/simulation.cpp: In function ‘void record_sim(int)’:
+../src/simulation.cpp:249:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/simulation.cpp:271:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/simulation.cpp:295:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/simulation.cpp: In function ‘Site get_neighbor(Site, unsigned int)’:
+../src/simulation.cpp:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/simulation.cpp
+ 
+Building target: IP_Anisotropy
+Invoking: GCC C++ Linker
+g++  -o "IP_Anisotropy"  ./src/simulation.o   
+Finished building target: IP_Anisotropy
+ 
+
+11:38:04 Build Finished (took 1s.161ms)
+

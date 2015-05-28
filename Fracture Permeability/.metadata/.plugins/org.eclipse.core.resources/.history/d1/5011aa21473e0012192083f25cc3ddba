@@ -1,0 +1,36 @@
+/*
+ * InitializeMatrix.cpp
+ *
+ *  Created on: Dec 4, 2012
+ *      Author: jqnorris
+ */
+
+#include "InitializeMatrix.h"
+
+
+namespace initializePoresFunctions
+{
+void setCurrentVolume(Pore & pore, Options & options)
+{
+	pore.currentVolume=options.v0;
+}
+
+void setNaturalVolume(Pore & pore, Options & options)
+{
+	pore.naturalVolume=options.v0;
+}
+
+void setPressure(Pore & pore, Options & options)
+{
+	pore.pressure=0;
+}
+
+}
+
+
+void initializeMatrix(PoreArray & pores, Matrix & matrix, Options & options)
+{
+
+}
+
+

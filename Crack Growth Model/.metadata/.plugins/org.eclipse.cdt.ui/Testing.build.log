@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project Testing ****
+
+make all 
+Building file: ../src/testing.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/testing.d" "../src/testing.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/testing.o" "../src/testing.cpp"
+Finished building: ../src/testing.cpp
+ 
+Building target: Testing
+Invoking: NVCC Linker
+nvcc  -link -o  "Testing"  ./src/periodicArray.o ./src/randKnuth.o ./src/testing.o   
+Finished building target: Testing
+ 
+
+**** Build Finished ****

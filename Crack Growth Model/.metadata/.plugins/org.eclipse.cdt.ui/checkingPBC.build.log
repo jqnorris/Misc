@@ -1,0 +1,23 @@
+
+**** Build of configuration Debug for project checkingPBC ****
+
+make all 
+Building file: ../src/main.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/main.d" "../src/main.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/randKnuth.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/randKnuth.d" "../src/randKnuth.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/randKnuth.o" "../src/randKnuth.cpp"
+Finished building: ../src/randKnuth.cpp
+ 
+Building target: checkingPBC
+Invoking: NVCC Linker
+nvcc  -link -o  "checkingPBC"  ./src/main.o ./src/randKnuth.o   
+Finished building target: checkingPBC
+ 
+
+**** Build Finished ****

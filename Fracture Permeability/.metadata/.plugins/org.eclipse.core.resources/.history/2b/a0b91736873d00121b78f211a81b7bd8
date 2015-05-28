@@ -1,0 +1,15 @@
+/*
+ * ApplyBoundaryConditions.h
+ *
+ *  Created on: Dec 3, 2012
+ *      Author: jqnorris
+ */
+
+#ifndef APPLYBOUNDARYCONDITIONS_H_
+#define APPLYBOUNDARYCONDITIONS_H_
+
+applyBoundaryConditions(pores,matrix,options);
+
+
+
+#endif /* APPLYBOUNDARYCONDITIONS_H_ */

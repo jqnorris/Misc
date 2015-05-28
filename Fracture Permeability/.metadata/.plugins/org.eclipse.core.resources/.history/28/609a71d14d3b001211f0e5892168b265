@@ -1,0 +1,20 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Nov 30, 2012
+ *      Author: jqnorris
+ */
+
+#include "Framework.h"
+#include "SimulationFunctions.h"
+
+int main()
+{
+	Options options;
+
+	poreArray pores;
+
+	return 0;
+}
+
+

@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project TestingFramwork ****
+
+make all 
+Building file: ../src/framework/Options.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/framework/Options.d" "../src/framework/Options.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/framework/Options.o" "../src/framework/Options.cpp"
+Finished building: ../src/framework/Options.cpp
+ 
+Building target: TestingFramwork
+Invoking: NVCC Linker
+nvcc  -link -o  "TestingFramwork"  ./src/main.o  ./src/framework/Matrix.o ./src/framework/Options.o ./src/framework/Pore.o ./src/framework/PoreArray.o ./src/framework/RandKnuth.o ./src/framework/Rock.o ./src/framework/SetupMatrixNeighbors.o ./src/framework/SetupPoreNeighbors.o ./src/framework/TestFunctions.o   
+Finished building target: TestingFramwork
+ 
+
+**** Build Finished ****

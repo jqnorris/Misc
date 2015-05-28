@@ -1,0 +1,6 @@
+12:01:32 **** Incremental Build of configuration Release for project IP_Earthquake_Continuous ****
+make all 
+make: Nothing to be done for `all'.
+
+12:01:32 Build Finished (took 56ms)
+

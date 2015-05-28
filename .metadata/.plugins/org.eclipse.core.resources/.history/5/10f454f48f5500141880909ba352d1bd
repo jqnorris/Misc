@@ -1,0 +1,34 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Oct 16, 2014
+ *      Author: jqnorris
+ */
+
+
+#include <iostream>
+#include <tuple>
+#include <climits>
+
+struct test_1
+{
+	int a;
+	int b;
+};
+
+
+typedef std::pair<long int, long int> Site_coordinates;
+typedef std::tuple<long int, long int, long int> test;
+
+
+int main(int argc, char **argv)
+{
+	std::cout << "Size of long int: " << sizeof(int) << "\n";
+	std::cout << "Size of pair: " << sizeof(Site_coordinates) << "\n";
+	std::cout << "Size of tuple: " << sizeof(test) << "\n";
+	std::cout << "Size of struct: " << sizeof(test_1) << "\n";
+	std::cout << INT_MIN << "\t" << INT_MAX;
+
+	return 0;
+}
+

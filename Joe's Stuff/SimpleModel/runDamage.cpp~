@@ -1,0 +1,99 @@
+/* Fiber-bundle Damage Model --- NxN array */
+/* Joe Gran */
+/* UC Davis */
+/* Local plus Mean Field Interactions*/
+/* The system is held at constant stress.  The interaction between sites 
+is both local with a total stress transfer percentage Beta, while the
+remaining 1-Beta stress is distributed over mean-field.*/
+
+
+/* PURE Mean Field behavior is with Beta = 0!!!*/
+
+/***********************************************************
+
+Call Program with 11 command line arguments
+    N    rho  nu_o  sigma_o
+    
+************************************************************/
+
+#include "Fibers.h"
+#include "Simulation.h"
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <algorithm>
+#include <list>
+
+using namespace std;
+
+int main(int argc, char* argv[]){
+    if ( argc != 9){
+        cout<<"N  rho nu_o sigma_o range MFpercentage times2run writeFile"<<endl;
+    return 0;
+    }
+
+
+    int realizations = 1;
+    int times_to_run = atoi(argv[7]);
+    double * FailTimes;
+    FailTimes = new double [times_to_run];
+
+    ofstream write;
+    write.open(argv[8]);
+    string filename = argv[8];
+    
+    ofstream writeCluster;
+    string clusterOut = filename.append("_clusters");
+    writeCluster.open(clusterOut.c_str());
+    //ofstream writeFail;
+    //filename.append("_failTimes");
+    //ofstream writeDamage;
+    //filename.append("_failTimes");
+
+    Simulation simulation;
+    simulation.setInfo(argv);
+    simulation.Initialize();
+    
+    
+    while(realizations <= times_to_run){
+        simulation.reset();
+    
+        while(simulation.NumFailed < simulation.grid){
+            simulation.failFiber();
+            //simulation.statistics();  //monitor the average time for each damage level
+            //write<<setprecision(20)<<simulation.TIME<<" "<<simulation.NumFailed/float(simulation.grid)<<" "<<simulation.seedRow<<" "<<simulation.seedClmn<<endl;
+        }
+        Cluster[clusterSize - 1]++;
+        
+        //FailTimes[realizations-1] = simulation.TIME;
+        cout<<"*** just finished run "<<realizations<<" ***"<<endl;
+        realizations += 1;
+    
+    }
+
+    
+    /*for(int j = 0; j < realizations; j++){
+        writeFail << FailTimes[j] << endl;
+    }*/
+
+    /*for(int j = 0; j < grid; j++){
+        writeDamage << j+1/float(grid)<< " " << DAMAGE[j] << endl;
+    }*/
+
+    
+    for(int k = 0; k < simulation.grid; k++){
+        if(simulation.Cluster[k] > 0){
+            writeCluster << k+1 << " " << simulation.Cluster[k] << endl;
+        }
+    }
+    
+    write.close();
+    writeCluster.close();
+    //writeFail.close();
+
+return 0;
+}
+
+
+
+

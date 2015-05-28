@@ -1,0 +1,20 @@
+/*
+ * pore.cpp
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+
+#include "pore.h"
+
+pore::pore()
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+pore::~pore()
+{
+	// TODO Auto-generated destructor stub
+}
+

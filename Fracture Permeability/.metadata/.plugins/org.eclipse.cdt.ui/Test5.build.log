@@ -1,0 +1,113 @@
+
+**** Build of configuration Debug for project Test5 ****
+
+make all 
+Building file: ../src/main.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/main.d" "../src/main.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building file: ../src/includes/simulation/ApplyBoundaryConditions.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/simulation/ApplyBoundaryConditions.d" "../src/includes/simulation/ApplyBoundaryConditions.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/simulation/ApplyBoundaryConditions.o" "../src/includes/simulation/ApplyBoundaryConditions.cpp"
+Finished building: ../src/includes/simulation/ApplyBoundaryConditions.cpp
+ 
+Building file: ../src/includes/simulation/DamageMatrix.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/simulation/DamageMatrix.d" "../src/includes/simulation/DamageMatrix.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/simulation/DamageMatrix.o" "../src/includes/simulation/DamageMatrix.cpp"
+Finished building: ../src/includes/simulation/DamageMatrix.cpp
+ 
+Building file: ../src/includes/simulation/Flow.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/simulation/Flow.d" "../src/includes/simulation/Flow.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/simulation/Flow.o" "../src/includes/simulation/Flow.cpp"
+Finished building: ../src/includes/simulation/Flow.cpp
+ 
+Building file: ../src/includes/simulation/InitializeMatrix.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/simulation/InitializeMatrix.d" "../src/includes/simulation/InitializeMatrix.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/simulation/InitializeMatrix.o" "../src/includes/simulation/InitializeMatrix.cpp"
+Finished building: ../src/includes/simulation/InitializeMatrix.cpp
+ 
+Building file: ../src/includes/simulation/InitializePores.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/simulation/InitializePores.d" "../src/includes/simulation/InitializePores.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/simulation/InitializePores.o" "../src/includes/simulation/InitializePores.cpp"
+Finished building: ../src/includes/simulation/InitializePores.cpp
+ 
+Building file: ../src/includes/simulation/Simulation.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/simulation/Simulation.d" "../src/includes/simulation/Simulation.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/simulation/Simulation.o" "../src/includes/simulation/Simulation.cpp"
+Finished building: ../src/includes/simulation/Simulation.cpp
+ 
+Building file: ../src/includes/simulation/TestFunctions.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/simulation/TestFunctions.d" "../src/includes/simulation/TestFunctions.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/simulation/TestFunctions.o" "../src/includes/simulation/TestFunctions.cpp"
+Finished building: ../src/includes/simulation/TestFunctions.cpp
+ 
+Building file: ../src/includes/framework/Matrix.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/framework/Matrix.d" "../src/includes/framework/Matrix.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/framework/Matrix.o" "../src/includes/framework/Matrix.cpp"
+Finished building: ../src/includes/framework/Matrix.cpp
+ 
+Building file: ../src/includes/framework/Options.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/framework/Options.d" "../src/includes/framework/Options.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/framework/Options.o" "../src/includes/framework/Options.cpp"
+Finished building: ../src/includes/framework/Options.cpp
+ 
+Building file: ../src/includes/framework/Pore.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/framework/Pore.d" "../src/includes/framework/Pore.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/framework/Pore.o" "../src/includes/framework/Pore.cpp"
+Finished building: ../src/includes/framework/Pore.cpp
+ 
+Building file: ../src/includes/framework/PoreArray.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/framework/PoreArray.d" "../src/includes/framework/PoreArray.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/framework/PoreArray.o" "../src/includes/framework/PoreArray.cpp"
+Finished building: ../src/includes/framework/PoreArray.cpp
+ 
+Building file: ../src/includes/framework/RandKnuth.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/framework/RandKnuth.d" "../src/includes/framework/RandKnuth.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/framework/RandKnuth.o" "../src/includes/framework/RandKnuth.cpp"
+Finished building: ../src/includes/framework/RandKnuth.cpp
+ 
+Building file: ../src/includes/framework/Rock.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/framework/Rock.d" "../src/includes/framework/Rock.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/framework/Rock.o" "../src/includes/framework/Rock.cpp"
+Finished building: ../src/includes/framework/Rock.cpp
+ 
+Building file: ../src/includes/framework/SetupMatrixNeighbors.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/framework/SetupMatrixNeighbors.d" "../src/includes/framework/SetupMatrixNeighbors.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/framework/SetupMatrixNeighbors.o" "../src/includes/framework/SetupMatrixNeighbors.cpp"
+Finished building: ../src/includes/framework/SetupMatrixNeighbors.cpp
+ 
+Building file: ../src/includes/framework/SetupPoreNeighbors.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/framework/SetupPoreNeighbors.d" "../src/includes/framework/SetupPoreNeighbors.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/framework/SetupPoreNeighbors.o" "../src/includes/framework/SetupPoreNeighbors.cpp"
+Finished building: ../src/includes/framework/SetupPoreNeighbors.cpp
+ 
+Building file: ../src/includes/framework/TestFunctions.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/includes/framework/TestFunctions.d" "../src/includes/framework/TestFunctions.cpp"
+nvcc -G -g -O0 --compile  -x c++ -o  "src/includes/framework/TestFunctions.o" "../src/includes/framework/TestFunctions.cpp"
+Finished building: ../src/includes/framework/TestFunctions.cpp
+ 
+Building target: Test5
+Invoking: NVCC Linker
+nvcc  -link -o  "Test5"  ./src/main.o  ./src/includes/simulation/ApplyBoundaryConditions.o ./src/includes/simulation/DamageMatrix.o ./src/includes/simulation/Flow.o ./src/includes/simulation/InitializeMatrix.o ./src/includes/simulation/InitializePores.o ./src/includes/simulation/Simulation.o ./src/includes/simulation/TestFunctions.o  ./src/includes/framework/Matrix.o ./src/includes/framework/Options.o ./src/includes/framework/Pore.o ./src/includes/framework/PoreArray.o ./src/includes/framework/RandKnuth.o ./src/includes/framework/Rock.o ./src/includes/framework/SetupMatrixNeighbors.o ./src/includes/framework/SetupPoreNeighbors.o ./src/includes/framework/TestFunctions.o   
+Finished building target: Test5
+ 
+
+**** Build Finished ****

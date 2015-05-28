@@ -1,0 +1,17 @@
+/*
+ * simulation.cpp
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+#include <iostream>
+#include "framework/Framework.h"
+
+using std::cout;
+using std::endl;
+
+
+int main(void)
+{
+
+}

@@ -1,0 +1,67 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../src/includes/ApplyBoundaryConditions.cpp \
+../src/includes/DamageMatrix.cpp \
+../src/includes/Flow.cpp \
+../src/includes/InitializeMatrix.cpp \
+../src/includes/InitializePores.cpp \
+../src/includes/Matrix.cpp \
+../src/includes/Options.cpp \
+../src/includes/Pore.cpp \
+../src/includes/PoreArray.cpp \
+../src/includes/RandKnuth.cpp \
+../src/includes/Rock.cpp \
+../src/includes/SetupMatrixNeighbors.cpp \
+../src/includes/SetupPoreNeighbors.cpp \
+../src/includes/Simulation.cpp \
+../src/includes/TestFunctions.cpp 
+
+OBJS += \
+./src/includes/ApplyBoundaryConditions.o \
+./src/includes/DamageMatrix.o \
+./src/includes/Flow.o \
+./src/includes/InitializeMatrix.o \
+./src/includes/InitializePores.o \
+./src/includes/Matrix.o \
+./src/includes/Options.o \
+./src/includes/Pore.o \
+./src/includes/PoreArray.o \
+./src/includes/RandKnuth.o \
+./src/includes/Rock.o \
+./src/includes/SetupMatrixNeighbors.o \
+./src/includes/SetupPoreNeighbors.o \
+./src/includes/Simulation.o \
+./src/includes/TestFunctions.o 
+
+CPP_DEPS += \
+./src/includes/ApplyBoundaryConditions.d \
+./src/includes/DamageMatrix.d \
+./src/includes/Flow.d \
+./src/includes/InitializeMatrix.d \
+./src/includes/InitializePores.d \
+./src/includes/Matrix.d \
+./src/includes/Options.d \
+./src/includes/Pore.d \
+./src/includes/PoreArray.d \
+./src/includes/RandKnuth.d \
+./src/includes/Rock.d \
+./src/includes/SetupMatrixNeighbors.d \
+./src/includes/SetupPoreNeighbors.d \
+./src/includes/Simulation.d \
+./src/includes/TestFunctions.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/includes/%.o: ../src/includes/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "src/includes" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0   "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

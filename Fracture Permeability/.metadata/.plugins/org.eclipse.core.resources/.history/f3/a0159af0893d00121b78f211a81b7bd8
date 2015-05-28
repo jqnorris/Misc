@@ -1,0 +1,188 @@
+/*
+ * TestingSimulationFunctions.cpp
+ *
+ *  Created on: Dec 1, 2012
+ *      Author: jqnorris
+ */
+
+#include <iostream>
+#include "../framework/Framework.h"
+#include "SimulationFunctions.h"
+
+using std::cout;
+using std::endl;
+
+namespace simulationFunctionsTestFunctions
+{
+int testDamageMatrix(PoreArray & pores, Options & options)
+{
+	cout << endl << endl << "Testing Damage Matrix" << endl << endl;
+
+	cout << "\t(1,1)\t";
+
+	int errorcount=0;
+
+
+	for (int i=0; i<options.latticeType; i++)
+	{
+		int sum=0;
+
+		damageMatrix(pores.pores[1][1], options);
+
+		for(int j=0; j<options.latticeType; j++)
+		{
+			cout << pores.pores[1][1].neighbors[j]->damage << " ";
+			sum+=pores.pores[1][1].neighbors[j]->damage;
+		}
+
+		cout << endl << "\t     \t";
+
+		if(sum!=(i+1))
+		{
+			errorcount++;
+		}
+
+	}
+
+	if(errorcount==0)
+	{
+		cout << endl  <<"Damage Matrix Test PASSED" << endl;
+		return 0;
+	}
+	else
+	{
+		cout << endl <<"Damage Matrix Test FAILED!!!!" << endl;
+		return 1;
+	};
+
+
+	return 1;
+}
+
+int testFlow(Matrix & matrix, Options & options)
+{
+	matrix.matrix[1][1].damage=1;
+	int errorcount=0;
+
+	cout << endl << "Testing Flow" << endl;
+
+
+	matrix.matrix[1][1].pore1->currentVolume=0;
+	matrix.matrix[1][1].pore2->currentVolume=2;
+	cout << endl << "\t" << matrix.matrix[1][1].pore1->currentVolume << " & " << matrix.matrix[1][1].pore2->currentVolume;
+
+
+	flow(matrix.matrix[1][1],options);
+
+	cout << "\t->\t";
+	cout << matrix.matrix[1][1].pore1->currentVolume << " & " << matrix.matrix[1][1].pore2->currentVolume << endl;
+
+	if(matrix.matrix[1][1].pore1->currentVolume!=1 || matrix.matrix[1][1].pore2->currentVolume!=1)
+	{
+		errorcount++;
+	}
+
+	matrix.matrix[1][1].pore1->currentVolume=4;
+	matrix.matrix[1][1].pore2->currentVolume=2;
+	cout << endl << "\t" << matrix.matrix[1][1].pore1->currentVolume << " & " << matrix.matrix[1][1].pore2->currentVolume;
+
+
+	flow(matrix.matrix[1][1],options);
+
+	cout << "\t->\t";
+	cout << matrix.matrix[1][1].pore1->currentVolume << " & " << matrix.matrix[1][1].pore2->currentVolume << endl;
+
+	if(matrix.matrix[1][1].pore1->currentVolume!=3 || matrix.matrix[1][1].pore2->currentVolume!=3)
+	{
+		errorcount++;
+	}
+
+	if(errorcount==0)
+	{
+		cout << endl << "Flow Test PASSED";
+		return 0;
+	}
+	else
+	{
+		cout << endl << "Flow Test FAILED!!!!";
+		return 1;
+	};
+
+	return 1;
+}
+
+int testApplyBoundaryConditions(PoreArray & pores, Matrix & matrix, Options & options)
+{
+	int x=options.N/2;
+	int y=options.N/2;
+
+	pores.pores[x][y].currentVolume=0;
+
+	cout << endl << endl << "Testing Apply Boundary Conditions" <<endl << endl;
+
+	cout << "\t" << pores.pores[x][y].currentVolume << "\t"
+
+
+	applyBoundaryConditions(pores, matrix, options);
+
+	return 1;
+}
+
+void testSimulationFunctions()
+{
+	Options options;
+
+	options.v0 = 1;
+	options.N=5;
+	options.latticeType=4;
+	options.E0=0;
+	options.epsilonY0=0;
+	options.k0=0;
+	options.phi0=0;
+
+	PoreArray pores(options);
+
+	Matrix matrix(options);
+
+	setupPoreNeighbors(pores, matrix, options);
+	setupMatrixNeighbors(pores, matrix, options);
+
+	int a=testDamageMatrix(pores,options);
+	int b=testFlow(matrix, options);
+	int c=testApplyBoundaryConditions(pores, matrix, options);
+
+	cout << endl << endl << "\t" <<"TEST SUMMARY" << endl;
+
+	if(a==0)
+	{
+		cout << "Damage Matrix Test" << "\t" << "PASSED" << endl;
+	}
+	else
+	{
+		cout << "Damage Matrix Test" << "\t" << "FAILED!!!!" << endl;
+	}
+
+	if(b==0)
+	{
+		cout << "Flow Test" << "\t" << "PASSED" << endl;
+	}
+	else
+	{
+		cout << "Flow Test" << "\t" << "FAILED!!!!" << endl;
+	}
+
+	if(c==0)
+	{
+		cout << "Apply Boundary Conditions Test" << "\t" << "PASSED" << endl;
+	}
+	else
+	{
+		cout << "Apply Boundary Conditions Test" << "\t" << "FAILED!!!!" << endl;
+	}
+
+
+
+	cout << endl << endl;
+}
+}
+

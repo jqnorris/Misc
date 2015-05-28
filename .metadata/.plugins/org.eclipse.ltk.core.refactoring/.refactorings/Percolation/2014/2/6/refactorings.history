@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Percolation/src/Lattice.cpp&apos; to &apos;System.cpp&apos;" description="Rename resource &apos;Lattice.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Lattice.cpp" name="System.cpp" stamp="1391545799030" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Percolation/src/Lattice.h&apos; to &apos;System.h&apos;" description="Rename resource &apos;Lattice.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Lattice.h" name="System.h" stamp="1391545830006" updateReferences="true"/>
+</session>

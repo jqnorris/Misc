@@ -1,0 +1,56 @@
+/*
+ * Options.cpp
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+
+#include "Options.h"
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+#include <cstdio>
+
+using std::cout;
+using std::endl;
+using std::getline;
+using std::string;
+
+Options::Options()
+{
+
+
+}
+
+Options::~Options()
+{
+
+}
+
+void Options::loadFromFile()
+{
+	int counter=0;
+
+	string test, temp;
+
+	std::ifstream optionsFile("options.in");
+
+	if(optionsFile.good())
+	{
+		cout << endl << "Loading Options File." << endl << endl;
+
+		getline(optionsFile, jobName);
+		cout << "\tOptions for: " << jobName << endl;
+
+		counter++;
+
+		getline(optionsFile, test, '=');
+		if (test == "Volume")
+		{
+			getline(optionsFile, temp);
+			V0 =atoi(temp.c_str());
+		}
+	}
+
+
+}

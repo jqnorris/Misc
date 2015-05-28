@@ -1,0 +1,16 @@
+
+**** Build of configuration Debug for project RiftSept28 ****
+
+make all 
+Building file: ../src/periodicArray.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/periodicArray.d" -MT"src/periodicArray.d" -o "src/periodicArray.o" "../src/periodicArray.cpp"
+Finished building: ../src/periodicArray.cpp
+ 
+Building target: RiftSept28
+Invoking: GCC C++ Linker
+g++  -o "RiftSept28"  ./src/Model.o ./src/OptionsBin.o ./src/Simulation.o ./src/orderedPair.o ./src/periodicArray.o ./src/randKnuth.o   
+Finished building target: RiftSept28
+ 
+
+**** Build Finished ****

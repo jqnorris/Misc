@@ -1,0 +1,57 @@
+!SESSION 2012-12-14 09:09:55.562 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-14 09:17:50.202
+!MESSAGE Indexed 'Simulation' (17 sources, 184 headers) in 12.52 sec: 12,531 declarations; 21,514 references; 0 unresolved inclusions; 7 syntax errors; 119 unresolved names (0.35%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-14 09:17:58.343
+!MESSAGE Indexed 'Statistics' (18 sources, 187 headers) in 8.14 sec: 12,555 declarations; 21,581 references; 0 unresolved inclusions; 7 syntax errors; 119 unresolved names (0.35%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-14 09:18:06.698
+!MESSAGE Indexed 'FirstSimulation' (18 sources, 188 headers) in 8.34 sec: 12,564 declarations; 21,610 references; 0 unresolved inclusions; 7 syntax errors; 119 unresolved names (0.35%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2012-12-14 09:18:13.531
+!MESSAGE Indexed 'Framework' (10 sources, 177 headers) in 6.83 sec: 12,395 declarations; 20,849 references; 0 unresolved inclusions; 7 syntax errors; 119 unresolved names (0.36%)
+!SESSION 2013-01-28 10:32:40.619 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-01-28 10:32:49.342
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2013-02-08 11:37:04.462 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-08 11:44:31.259
+!MESSAGE Indexed 'Testing' (0 sources, 76 headers) in 0.95 sec: 2,235 declarations; 2,488 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2013-02-08 11:47:28.850 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-08 11:47:57.984
+!MESSAGE Indexed 'Testing' (0 sources, 76 headers) in 1.00 sec: 2,139 declarations; 2,375 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2013-02-08 14:21:09.896 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/jqnorris/Documents/Permeability/IP Simulation -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-02-08 14:21:10.906
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-02-08 14:33:36.807
+!MESSAGE Indexed 'playingAround' (0 sources, 76 headers) in 0.88 sec: 2,235 declarations; 2,488 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)

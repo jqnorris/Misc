@@ -1,0 +1,49 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../src/simulation/framework/Matrix.cpp \
+../src/simulation/framework/Options.cpp \
+../src/simulation/framework/Pore.cpp \
+../src/simulation/framework/PoreArray.cpp \
+../src/simulation/framework/RandKnuth.cpp \
+../src/simulation/framework/Rock.cpp \
+../src/simulation/framework/SetupMatrixNeighbors.cpp \
+../src/simulation/framework/SetupPoreNeighbors.cpp \
+../src/simulation/framework/TestFunctions.cpp 
+
+OBJS += \
+./src/simulation/framework/Matrix.o \
+./src/simulation/framework/Options.o \
+./src/simulation/framework/Pore.o \
+./src/simulation/framework/PoreArray.o \
+./src/simulation/framework/RandKnuth.o \
+./src/simulation/framework/Rock.o \
+./src/simulation/framework/SetupMatrixNeighbors.o \
+./src/simulation/framework/SetupPoreNeighbors.o \
+./src/simulation/framework/TestFunctions.o 
+
+CPP_DEPS += \
+./src/simulation/framework/Matrix.d \
+./src/simulation/framework/Options.d \
+./src/simulation/framework/Pore.d \
+./src/simulation/framework/PoreArray.d \
+./src/simulation/framework/RandKnuth.d \
+./src/simulation/framework/Rock.d \
+./src/simulation/framework/SetupMatrixNeighbors.d \
+./src/simulation/framework/SetupPoreNeighbors.d \
+./src/simulation/framework/TestFunctions.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/simulation/framework/%.o: ../src/simulation/framework/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0  -odir "src/simulation/framework" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc -G -g -O0   "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

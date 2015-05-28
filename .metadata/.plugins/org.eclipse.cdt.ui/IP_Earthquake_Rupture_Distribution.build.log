@@ -1,0 +1,21 @@
+12:07:36 **** Incremental Build of configuration Release for project IP_Earthquake_Rupture_Distribution ****
+make all 
+Building file: ../src/IP_Earthquake_Rupture_Distribution.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/IP_Earthquake_Rupture_Distribution.d" -MT"src/IP_Earthquake_Rupture_Distribution.d" -o "src/IP_Earthquake_Rupture_Distribution.o" "../src/IP_Earthquake_Rupture_Distribution.cpp"
+../src/IP_Earthquake_Rupture_Distribution.cpp: In function ‘Bond get_bond_from_index(Bond_index)’:
+../src/IP_Earthquake_Rupture_Distribution.cpp:67:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/IP_Earthquake_Rupture_Distribution.cpp: In function ‘void print_lattice()’:
+../src/IP_Earthquake_Rupture_Distribution.cpp:307:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/IP_Earthquake_Rupture_Distribution.cpp: In function ‘int main(int, char**)’:
+../src/IP_Earthquake_Rupture_Distribution.cpp:371:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../src/IP_Earthquake_Rupture_Distribution.cpp
+ 
+Building target: IP_Earthquake_Rupture_Distribution
+Invoking: GCC C++ Linker
+g++  -o "IP_Earthquake_Rupture_Distribution"  ./src/IP_Earthquake_Rupture_Distribution.o   -lboost_timer -lboost_system
+Finished building target: IP_Earthquake_Rupture_Distribution
+ 
+
+12:07:38 Build Finished (took 2s.466ms)
+

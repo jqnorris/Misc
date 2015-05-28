@@ -1,0 +1,26 @@
+
+**** Build of configuration Debug for project Rift 2 ****
+
+make all 
+Building file: ../src/ImportOptions.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/ImportOptions.d" "../src/ImportOptions.cpp"
+nvcc --compile -G -O0 -g -o  "src/ImportOptions.o" "../src/ImportOptions.cpp"
+Finished building: ../src/ImportOptions.cpp
+ 
+Building file: ../src/OptionsBin.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/OptionsBin.d" "../src/OptionsBin.cpp"
+nvcc --compile -G -O0 -g -o  "src/OptionsBin.o" "../src/OptionsBin.cpp"
+Finished building: ../src/OptionsBin.cpp
+ 
+Building file: ../src/Simulation.cpp
+Invoking: NVCC Compiler
+nvcc -G -g -O0  -odir "src" -M -o "src/Simulation.d" "../src/Simulation.cpp"
+nvcc --compile -G -O0 -g -o  "src/Simulation.o" "../src/Simulation.cpp"
+../src/Simulation.cpp: In function ‘int main()’:
+../src/Simulation.cpp:14:16: error: too few arguments to function ‘void importOptions(OptionsBin&)’
+../src/ImportOptions.h:13:6: note: declared here
+make: *** [src/Simulation.o] Error 1
+
+**** Build Finished ****

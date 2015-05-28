@@ -1,0 +1,20 @@
+/*
+ * Data.cpp
+ *
+ *  Created on: Dec 7, 2012
+ *      Author: jqnorris
+ */
+
+#include "Data.h"
+
+Data::Data()
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+Data::~Data()
+{
+	// TODO Auto-generated destructor stub
+}
+

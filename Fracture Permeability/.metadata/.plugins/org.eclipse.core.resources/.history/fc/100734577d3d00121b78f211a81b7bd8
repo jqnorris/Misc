@@ -1,0 +1,17 @@
+/*
+ * TestingSimulationFunctions.h
+ *
+ *  Created on: Dec 1, 2012
+ *      Author: jqnorris
+ */
+
+#ifndef TESTINGSIMULATIONFUNCTIONS_H_
+#define TESTINGSIMULATIONFUNCTIONS_H_
+
+#include "Framework.h"
+#include "SimulationFunctions.h"
+
+int testDamageMatrix(PoreArray &, Options &);
+
+
+#endif /* TESTINGSIMULATIONFUNCTIONS_H_ */

@@ -1,0 +1,434 @@
+/*
+ * TestFunctions.cpp
+ *
+ *  Created on: Nov 30, 2012
+ *      Author: jqnorris
+ */
+
+#include <iostream>
+#include <cmath>
+#include "TestFunctions.h"
+
+
+using std::cout;
+using std::endl;
+using std::abs;
+
+namespace frameworkTestFunctions
+{
+int counter=0;
+
+using frameworkTestFunctions::counter;
+
+void setNatVol(Pore & pore, Options& options)
+{
+	pore.naturalVolume = counter;
+	counter++;
+}
+
+void setE(Rock & rock, Options& options)
+{
+	rock.youngsModulus = counter;
+	counter++;
+}
+
+
+int testMatrixForAll(Matrix & matrix, Options & options)
+{
+	counter=0;
+
+	matrix.forAllRock(setE,options);
+
+	int errorcount=0;
+	int temp=0;
+
+	cout << endl << "Testing Matrix For All Function" << endl << endl << "\t";
+
+	for(int i=0; i< matrix.xDimension; i++)
+	{
+		for(int j=0; j< matrix.yDimension; j++)
+		{
+			cout << matrix.matrix[i][j].youngsModulus << "\t";
+			if(temp!=matrix.matrix[i][j].youngsModulus)
+			{
+				errorcount++;
+			}
+
+			temp++;
+		}
+
+		cout << endl << "\t";
+	}
+
+	if(errorcount==0)
+	{
+		cout << endl << "Matrix For All Test Passed" << endl << endl;
+		return 0;
+	}
+	else
+	{
+		cout << endl << "Matrix For All Test FALIED!!!!"  << endl << endl;
+		return 1;
+	};
+
+	return 0;
+}
+
+int testPoreArrayForAll(PoreArray & pores, Options & options)
+{
+	counter=0;
+
+	pores.forAllPores(setNatVol,options);
+
+	int errorcount=0;
+	int temp=0;
+
+	cout << endl << "Testing PoreArray For All Function" << endl << endl << "\t";
+
+	for(int i=0; i< pores.dimension; i++)
+	{
+		for(int j=0; j< pores.dimension; j++)
+		{
+			cout << pores.pores[i][j].naturalVolume << "\t";
+			if(temp!=pores.pores[i][j].naturalVolume)
+			{
+				errorcount++;
+			}
+
+			temp++;
+		}
+
+		cout << endl << "\t";
+	}
+
+	if(errorcount==0)
+	{
+		cout << endl << "PoreArray For All Test Passed" << endl << endl;
+		return 0;
+	}
+	else
+	{
+		cout << endl << "PoreArray For All Test FALIED!!!!"  << endl << endl;
+		return 1;
+	};
+
+	return 0;
+}
+
+int testSetupMatrixNeighborsSquareLattice(PoreArray & pores, Matrix & matrix, Options & options)
+{
+	counter=0;
+
+	int errorcount=0;
+
+	pores.forAllPores(setNatVol,options);
+
+	pores.reservoir.naturalVolume=1000;
+
+
+	cout << endl << "Testing Setup Matrix Neighbors For Square Lattice" << endl << endl ;
+
+	for(int i=0; i< matrix.xDimension; i++)
+	{
+		for(int j=0; j< matrix.yDimension; j++)
+		{
+			int a=matrix.matrix[i][j].pore1->naturalVolume;
+			int b=matrix.matrix[i][j].pore2->naturalVolume;
+
+			cout<< "\t" << "(" << i << "," << j << ")" << "\t" << a << "<->" << b<< endl;
+
+			if(i%2==0)
+			{
+				if(!(abs(a-b)==options.N || abs(a-b)>500))
+				{
+					if(!(abs(a-b)==0 && a==1000))
+						errorcount++;
+				}
+			}
+			if(i%2==1)
+			{
+				if(!(abs(a-b)==1 || abs(a-b)>500))
+				{
+					errorcount++;
+				}
+			}
+		}
+	}
+
+	if(errorcount==0)
+	{
+		cout << endl << "Setup Matrix Neighbors For Square Lattice Test Passed" << endl << endl;
+		return 0;
+	}
+	else
+	{
+		cout << endl << "Setup Matrix Neighbors For Square Lattice Test FAILED!!!!"  << endl << endl;
+		return 1;
+	};
+
+	return 0;
+}
+
+int testSetupMatrixNeighborsHexLattice(PoreArray & pores, Matrix & matrix, Options & options)
+{
+	counter=0;
+
+	int errorcount=0;
+
+	pores.forAllPores(setNatVol,options);
+
+	pores.reservoir.naturalVolume=1000;
+
+
+	cout << endl << "Testing Setup Matrix Neighbors For Hex Lattice" << endl << endl ;
+
+	for(int i=0; i< matrix.xDimension; i++)
+	{
+		for(int j=0; j< matrix.yDimension; j++)
+		{
+			int a=matrix.matrix[i][j].pore1->naturalVolume;
+			int b=matrix.matrix[i][j].pore2->naturalVolume;
+
+			cout<< "\t" << "(" << i << "," << j << ")" << "\t" << a << "<->" << b<< endl;
+
+			if(i%3==0)
+			{
+				if(!(abs(a-b)==(options.N +1) || abs(a-b)>500))
+				{
+					if(!(abs(a-b)==0 && a==1000))
+					{
+						errorcount++;
+					}
+				}
+			}
+			if(i%3==1)
+			{
+				if(!(abs(a-b)== options.N || abs(a-b)>500))
+				{
+					if(!(abs(a-b)==0 && a==1000))
+					{
+						errorcount++;
+					}
+				}
+			}
+			if(i%3==2)
+			{
+				if(!(abs(a-b)==1 || abs(a-b)>500))
+				{
+					errorcount++;
+				}
+			}
+		}
+	}
+
+	if(errorcount==0)
+	{
+		cout << endl << "Setup Matrix Neighbors For Hex Lattice Test Passed" << endl << endl;
+		return 0;
+	}
+	else
+	{
+		cout << endl << "Setup Matrix Neighbors For Hex Lattice Test FAILED!!!!"  << endl << endl;
+		return 1;
+	};
+
+	return 0;
+}
+
+int testSetupPoreNeighborsSquareLattice(PoreArray & pores, Matrix & matrix, Options & options)
+{
+	counter=0;
+
+	matrix.forAllRock(setE,options);
+
+	int errorcount=0;
+
+	cout << endl << "Testing Setup Pore Neighbors For Square Lattice" << endl << endl;
+
+	for(int i=0; i< pores.dimension; i++)
+	{
+		for(int j=0; j< pores.dimension; j++)
+		{
+			cout << "\t(" << i << "," << j << ")\t";
+
+			for(int k=0; k< options.latticeType; k++)
+			{
+				cout << pores.pores[i][j].neighbors[k]->youngsModulus << " ";
+			}
+
+			if(abs(pores.pores[i][j].neighbors[0]->youngsModulus-pores.pores[i][j].neighbors[1]->youngsModulus)!=2*(options.N+1)
+					|| abs(pores.pores[i][j].neighbors[2]->youngsModulus-pores.pores[i][j].neighbors[3]->youngsModulus)!=1)
+			{
+				errorcount++;
+			}
+
+			cout << endl;
+		}
+	}
+
+	if(errorcount==0)
+	{
+		cout << endl << "Setup Pore Neighbors For Square Lattice Test Passed" << endl << endl;
+		return 0;
+	}
+	else
+	{
+		cout << endl << "Setup Pore Neighbors For Square Lattice Test FAILED!!!!"  << endl << endl;
+		return 1;
+	};
+
+	return 0;
+}
+
+int testSetupPoreNeighborsHexLattice(PoreArray & pores, Matrix & matrix, Options & options)
+{
+	counter=0;
+
+	matrix.forAllRock(setE,options);
+
+	int errorcount=0;
+
+	cout << endl << "Testing Setup Pore Neighbors For HEx Lattice" << endl << endl;
+
+	for(int i=0; i< pores.dimension; i++)
+	{
+		for(int j=0; j< pores.dimension; j++)
+		{
+			cout << "\t(" << i << "," << j << ")\t";
+
+			for(int k=0; k< options.latticeType; k++)
+			{
+				cout << pores.pores[i][j].neighbors[k]->youngsModulus << " ";
+			}
+
+			if(abs(pores.pores[i][j].neighbors[0]->youngsModulus-pores.pores[i][j].neighbors[1]->youngsModulus)!=3*(options.N+1)+1
+					|| abs(pores.pores[i][j].neighbors[2]->youngsModulus-pores.pores[i][j].neighbors[3]->youngsModulus)!=3*(options.N+1)
+					|| abs(pores.pores[i][j].neighbors[4]->youngsModulus-pores.pores[i][j].neighbors[5]->youngsModulus)!=1)
+			{
+				errorcount++;
+			}
+
+			cout << endl;
+		}
+	}
+
+	if(errorcount==0)
+	{
+		cout << endl << "Setup Pore Neighbors For Hex Lattice Test Passed" << endl << endl;
+		return 0;
+	}
+	else
+	{
+		cout << endl << "Setup Pore Neighbors For Hex Lattice Test FAILED!!!!"  << endl << endl;
+		return 1;
+	};
+
+	return 0;
+}
+
+void testFramework()
+{
+	Options optionsSq, optionsHex;
+
+	optionsSq.v0 = 1;
+	optionsSq.N=5;
+	optionsSq.latticeType=4;
+	optionsSq.E0=0;
+	optionsSq.epsilonY0=0;
+	optionsSq.k0=0;
+	optionsSq.phi0=0;
+
+	optionsHex.v0 = 1;
+	optionsHex.N=5;
+	optionsHex.latticeType=6;
+	optionsHex.E0=0;
+	optionsHex.epsilonY0=0;
+	optionsHex.k0=0;
+	optionsHex.phi0=0;
+
+	PoreArray poresSq(optionsSq), poresHex(optionsHex);
+	Matrix matrixSq(optionsSq),matrixHex(optionsHex);
+
+	setupMatrixNeighbors(poresSq, matrixSq, optionsSq);
+	setupMatrixNeighbors(poresHex, matrixHex, optionsHex);
+
+	setupPoreNeighbors(poresSq, matrixSq, optionsSq);
+	setupPoreNeighbors(poresHex, matrixHex, optionsHex);
+
+	int a=testMatrixForAll(matrixSq, optionsSq);
+	int b=testPoreArrayForAll(poresSq, optionsSq);
+	int c=testSetupMatrixNeighborsSquareLattice(poresSq, matrixSq, optionsSq);
+	int d=testSetupMatrixNeighborsHexLattice(poresHex, matrixHex, optionsHex);
+	int f=testSetupPoreNeighborsSquareLattice(poresSq, matrixSq, optionsSq);
+	int g=testSetupPoreNeighborsHexLattice(poresHex, matrixHex, optionsHex);
+
+	cout << endl << endl << "TEST SUMMARY" << endl;
+	cout << "---------------------------------------"<< endl;
+	if(a==0)
+	{
+		cout << "- Matrix For All Test PASSED"<< endl;
+	}
+	else
+	{
+		cout << "- Matrix For All Test FAILED!!!!"<< endl;
+	};
+	if(b==0)
+	{
+		cout << "- PoreArray For All Test PASSED"<< endl;
+	}
+	else
+	{
+		cout << "- PoreArray For All Test FAILED!!!!"<< endl;
+	};
+	if(c==0)
+	{
+		cout << "- Setup Matrix Neighbors Square Lattice Test PASSED"<< endl;
+	}
+	else
+	{
+		cout << "- Setup Matrix Neighbors Square Lattice Test FAILED!!!!"<< endl;
+	};
+	if(d==0)
+	{
+		cout << "- Setup Matrix Neighbors Hex Lattice PASSED"<< endl;
+	}
+	else
+	{
+		cout << "- Setup Matrix Neighbors Hex Lattice FAILED!!!!"<< endl;
+	};
+	if(f==0)
+	{
+		cout << "- Setup Pore Neighbors Square Lattice Test PASSED"<< endl;
+	}
+	else
+	{
+		cout << "- Setup Pore Neighbors Square Lattice Test FAILED!!!!"<< endl;
+	};
+	if(g==0)
+	{
+		cout << "- Setup Pore Neighbors Hex Lattice PASSED"<< endl;
+	}
+	else
+	{
+		cout << "- Setup Pore Neighbors Hex Lattice FAILED!!!!"<< endl;
+	};
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

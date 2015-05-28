@@ -1,0 +1,17 @@
+/*
+ * InitializeMatrix.h
+ *
+ *  Created on: Dec 4, 2012
+ *      Author: jqnorris
+ */
+
+#ifndef INITIALIZEMATRIX_H_
+#define INITIALIZEMATRIX_H_
+
+#include <Framework.h>
+
+
+void initializeMatrix(PoreArray &, Matrix &, Options &);
+
+
+#endif /* INITIALIZEMATRIX_H_ */

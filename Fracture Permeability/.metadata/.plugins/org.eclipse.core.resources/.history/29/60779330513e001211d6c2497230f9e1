@@ -1,0 +1,17 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Nov 30, 2012
+ *      Author: jqnorris
+ */
+
+#include "framework.h"
+#include "simulation/Simulation.h"
+
+int main()
+{
+	simulationFunctionsTestFunctions::testSimulationFunctions();
+	return 0;
+}
+
+

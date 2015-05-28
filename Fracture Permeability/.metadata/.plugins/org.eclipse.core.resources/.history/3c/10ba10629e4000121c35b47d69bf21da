@@ -1,0 +1,42 @@
+/*
+ * Data.cpp
+ *
+ *  Created on: Dec 7, 2012
+ *      Author: jqnorris
+ */
+
+#include <iostream>
+#include <fstream>
+#include "Data.h"
+
+using std::ofstream;
+
+Data::Data(PoreArray & P, Matrix & M, Options & O):pores(P),matrix(M),options(O)
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+Data::~Data()
+{
+	// TODO Auto-generated destructor stub
+}
+
+void Data::connectivity()
+{
+	ofstream myfile("connectivity.txt");
+
+	fout.open("name_age.dat",ios::app);
+
+	myfile.
+
+
+}
+
+void Data::initialize()
+{
+	ofstream myfile("connectivity.txt");
+	myfile << "Connectivity for: " << options.jobName << "\n";
+	myfile.close();
+
+}

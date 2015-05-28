@@ -1,0 +1,6 @@
+11:48:10 **** Build of configuration Default for project IP_Clusters_Pc2 ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+11:48:10 Build Finished (took 53ms)
+

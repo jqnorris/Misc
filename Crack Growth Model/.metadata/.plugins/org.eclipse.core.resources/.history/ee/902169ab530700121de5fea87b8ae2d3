@@ -1,0 +1,47 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../src/ImportOptions.cpp \
+../src/OptionsBin.cpp \
+../src/Simulation.cpp 
+
+OBJS += \
+./src/ImportOptions.o \
+./src/OptionsBin.o \
+./src/Simulation.o 
+
+CPP_DEPS += \
+./src/ImportOptions.d \
+./src/OptionsBin.d \
+./src/Simulation.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/ImportOptions.o: ../src/ImportOptions.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0 -gencode arch=compute_20,code=sm_21 -odir "src" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc --device-c -G -O0 -g -gencode arch=compute_20,code=sm_21 -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/OptionsBin.o: ../src/OptionsBin.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0 -gencode arch=compute_20,code=sm_21 -odir "src" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc --device-c -G -O0 -g -gencode arch=compute_20,code=sm_21 -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/Simulation.o: ../src/Simulation.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: NVCC Compiler'
+	nvcc -G -g -O0 -gencode arch=compute_20,code=sm_21 -odir "src" -M -o "$(@:%.o=%.d)" "$<"
+	nvcc --device-c -G -O0 -g -gencode arch=compute_20,code=sm_21 -o  "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

@@ -1,0 +1,10 @@
+Job8
+Volume=10
+N=100
+LatticeType=4
+YoungsModulus=0
+YieldStrain=0
+Permeability=0
+Porosity=0
+DeltaVolume=10
+TimeSteps=1000

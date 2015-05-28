@@ -1,0 +1,3 @@
+1
+Rupture sizes for: 5 runs of 10 by 40
+0	1

@@ -1,0 +1,16 @@
+/*
+ * DamageMatrix.h
+ *
+ *  Created on: Nov 30, 2012
+ *      Author: jqnorris
+ */
+
+#ifndef DAMAGEMATRIX_H_
+#define DAMAGEMATRIX_H_
+
+#include "Pore.h"
+
+void damageMatrix(Pore &)
+
+
+#endif /* DAMAGEMATRIX_H_ */

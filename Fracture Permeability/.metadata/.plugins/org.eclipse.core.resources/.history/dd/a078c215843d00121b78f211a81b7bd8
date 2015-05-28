@@ -1,0 +1,107 @@
+/*
+ * simulation.cpp
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+#include <iostream>
+#include "PoreArray.h"
+#include "Matrix.h"
+#include "Options.h"
+#include "SetupMatrixNeighbors.h"
+#include "SetupPoreNeighbors.h"
+#include "TestFunctions.h"
+
+using std::cout;
+using std::endl;
+
+
+int main(void)
+{
+	Options optionsSq, optionsHex;
+
+	optionsSq.v0 = 1;
+	optionsSq.N=5;
+	optionsSq.latticeType=4;
+	optionsSq.E0=0;
+	optionsSq.epsilonY0=0;
+	optionsSq.k0=0;
+	optionsSq.phi0=0;
+
+	optionsHex.v0 = 1;
+	optionsHex.N=5;
+	optionsHex.latticeType=6;
+	optionsHex.E0=0;
+	optionsHex.epsilonY0=0;
+	optionsHex.k0=0;
+	optionsHex.phi0=0;
+
+	PoreArray poresSq(optionsSq), poresHex(optionsHex);
+	Matrix matrixSq(optionsSq),matrixHex(optionsHex);
+
+	setupMatrixNeighbors(poresSq, matrixSq, optionsSq);
+	setupMatrixNeighbors(poresHex, matrixHex, optionsHex);
+
+	setupPoreNeighbors(poresSq, matrixSq, optionsSq);
+	setupPoreNeighbors(poresHex, matrixHex, optionsHex);
+
+	int a=testMatrixForAll(matrixSq, optionsSq);
+	int b=testPoreArrayForAll(poresSq, optionsSq);
+	int c=testSetupMatrixNeighborsSquareLattice(poresSq, matrixSq, optionsSq);
+	int d=testSetupMatrixNeighborsHexLattice(poresHex, matrixHex, optionsHex);
+	int f=testSetupPoreNeighborsSquareLattice(poresSq, matrixSq, optionsSq);
+	int g=testSetupPoreNeighborsHexLattice(poresHex, matrixHex, optionsHex);
+
+	cout << endl << endl << "TEST SUMMARY" << endl;
+	cout << "---------------------------------------"<< endl;
+	if(a==0)
+	{
+		cout << "- Matrix For All Test PASSED"<< endl;
+	}
+	else
+	{
+		cout << "- Matrix For All Test FAILED!!!!"<< endl;
+	};
+	if(b==0)
+	{
+		cout << "- PoreArray For All Test PASSED"<< endl;
+	}
+	else
+	{
+		cout << "- PoreArray For All Test FAILED!!!!"<< endl;
+	};
+	if(c==0)
+	{
+		cout << "- Setup Matrix Neighbors Square Lattice Test PASSED"<< endl;
+	}
+	else
+	{
+		cout << "- Setup Matrix Neighbors Square Lattice Test FAILED!!!!"<< endl;
+	};
+	if(d==0)
+	{
+		cout << "- Setup Matrix Neighbors Hex Lattice PASSED"<< endl;
+	}
+	else
+	{
+		cout << "- Setup Matrix Neighbors Hex Lattice FAILED!!!!"<< endl;
+	};
+	if(f==0)
+	{
+		cout << "- Setup Pore Neighbors Square Lattice Test PASSED"<< endl;
+	}
+	else
+	{
+		cout << "- Setup Pore Neighbors Square Lattice Test FAILED!!!!"<< endl;
+	};
+	if(g==0)
+	{
+		cout << "- Setup Pore Neighbors Hex Lattice PASSED"<< endl;
+	}
+	else
+	{
+		cout << "- Setup Pore Neighbors Hex Lattice FAILED!!!!"<< endl;
+	};
+
+	return 0;
+}

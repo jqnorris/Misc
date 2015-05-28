@@ -1,0 +1,28 @@
+PT J
+AU Peerlings, RHJ
+   deBorst, R
+   Brekelmans, WAM
+   deVree, JHP
+TI Gradient enhanced damage for quasi-brittle materials
+SO INTERNATIONAL JOURNAL FOR NUMERICAL METHODS IN ENGINEERING
+VL 39
+IS 19
+BP 3391
+EP 3403
+DI 10.1002/(SICI)1097-0207(19961015)39:19<3391::AID-NME7>3.0.CO;2-D
+PD OCT 15 1996
+PY 1996
+AB Conventional continuum damage descriptions of material degeneration
+   suffer from loss of well-posedness beyond a certain level of accumulated
+   damage. As a consequence, numerical solutions are obtained which are
+   unacceptable from a physical point of view. The introduction of
+   higher-order deformation gradients in the constitutive model is
+   demonstrated to be an adequate remedy to this deficiency of standard
+   damage models. A consistent numerical solution procedure of the
+   governing partial; differential equations is presented, which is shown
+   to be capable of properly simulating localization phenomena.
+TC 287
+Z9 294
+SN 0029-5981
+UT WOS:A1996VJ64200009
+ER

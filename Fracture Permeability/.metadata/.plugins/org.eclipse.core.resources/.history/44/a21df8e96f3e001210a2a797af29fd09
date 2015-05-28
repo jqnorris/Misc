@@ -1,0 +1,31 @@
+src/Simulation.o : ../src/Simulation.cpp \
+    ../src/Simulation.h \
+    ../src/framework/Framework.h \
+    ../src/framework/Matrix.h \
+    ../src/framework/Rock.h \
+    ../src/framework/Options.h \
+    ../src/framework/Pore.h \
+    ../src/framework/PoreArray.h \
+    ../src/framework/RandKnuth.h \
+    /usr/include/time.h \
+    /usr/include/features.h \
+    /usr/include/x86_64-linux-gnu/bits/predefs.h \
+    /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+    /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+    /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+    /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+    /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h \
+    /usr/include/x86_64-linux-gnu/bits/time.h \
+    /usr/include/x86_64-linux-gnu/bits/types.h \
+    /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+    /usr/include/x86_64-linux-gnu/bits/timex.h \
+    /usr/include/xlocale.h \
+    ../src/framework/SetupMatrixNeighbors.h \
+    ../src/framework/SetupPoreNeighbors.h \
+    ../src/framework/TestFunctions.h \
+    ../src/simulationFunctions/SimulationFunctions.h \
+    ../src/simulationFunctions/DamageMatrix.h \
+    ../src/simulationFunctions/../framework/Framework.h \
+    ../src/simulationFunctions/Flow.h \
+    ../src/simulationFunctions/TestFunctions.h \
+    ../src/simulationFunctions/ApplyBoundaryConditions.h

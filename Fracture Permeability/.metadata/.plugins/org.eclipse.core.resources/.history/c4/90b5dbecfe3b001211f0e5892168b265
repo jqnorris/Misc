@@ -1,0 +1,33 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Nov 30, 2012
+ *      Author: jqnorris
+ */
+
+#include "Framework.h"
+#include "SimulationFunctions.h"
+
+int main()
+{
+	Options options;
+
+	options.v0 = 1;
+	options.N=5;
+	options.latticeType=4;
+	options.E0=0;
+	options.epsilonY0=0;
+	options.k0=0;
+	options.phi0=0;
+
+	PoreArray pores(options);
+
+	Matrix matrix(options);
+
+	setupPoreNeighbors(pores, matrix, options);
+
+
+	return 0;
+}
+
+

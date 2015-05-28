@@ -1,0 +1,37 @@
+/*
+ * Simulation.cpp
+ *
+ *  Created on: Nov 30, 2012
+ *      Author: jqnorris
+ */
+
+#include <iostream>
+#include "Simulation.h"
+
+Simulation::Simulation(PoreArray & P, Matrix & M, Options & O):pores(P),matrix(M),options(O)
+{
+ initialize();
+}
+
+Simulation::~Simulation()
+{
+
+}
+
+void Simulation::initialize()
+{
+	setupMatrixNeighbors(pores, matrix, options);
+	setupPoreNeighbors(pores, matrix, options);
+}
+
+void Simulation::timestep()
+{
+	std::cout << "in time step" << std::endl;
+	pores.forAllPores(damageMatrix, options);
+	std::cout << "Damaged" << std::endl;
+	matrix.forAllRock(flow, options);
+	std::cout << "Flowed" << std::endl;
+	applyBoundaryConditions(pores,matrix,options);
+	std::cout << "Boundary Conditions" << std::endl;
+
+}

@@ -1,0 +1,28 @@
+
+**** Build of configuration Debug for project RiftSept27 ****
+
+make all 
+Building file: ../src/Model.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Model.d" -MT"src/Model.d" -o "src/Model.o" "../src/Model.cpp"
+../src/Model.cpp: In function ‘void Model(periodicArray&, OptionsBin&)’:
+../src/Model.cpp:18:9: warning: unused variable ‘deltaGap’ [-Wunused-variable]
+Finished building: ../src/Model.cpp
+ 
+Building file: ../src/Simulation.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Simulation.d" -MT"src/Simulation.d" -o "src/Simulation.o" "../src/Simulation.cpp"
+Finished building: ../src/Simulation.cpp
+ 
+Building file: ../src/periodicArray.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/periodicArray.d" -MT"src/periodicArray.d" -o "src/periodicArray.o" "../src/periodicArray.cpp"
+Finished building: ../src/periodicArray.cpp
+ 
+Building target: RiftSept27
+Invoking: GCC C++ Linker
+g++  -o "RiftSept27"  ./src/Model.o ./src/OptionsBin.o ./src/Simulation.o ./src/orderedPair.o ./src/periodicArray.o ./src/randKnuth.o   
+Finished building target: RiftSept27
+ 
+
+**** Build Finished ****

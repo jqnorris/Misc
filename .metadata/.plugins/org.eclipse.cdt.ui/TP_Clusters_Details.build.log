@@ -1,0 +1,19 @@
+11:57:13 **** Incremental Build of configuration Release for project TP_Clusters_Details ****
+make all 
+Building file: ../src/sim.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/sim.d" -MT"src/sim.d" -o "src/sim.o" "../src/sim.cpp"
+../src/sim.cpp: In function ‘bool grow_clusters(Bond)’:
+../src/sim.cpp:180:13: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/sim.cpp: In function ‘int main(int, char**)’:
+../src/sim.cpp:329:15: warning: variable ‘largest_cluster’ set but not used [-Wunused-but-set-variable]
+Finished building: ../src/sim.cpp
+ 
+Building target: TP_Clusters_Details
+Invoking: GCC C++ Linker
+g++  -o "TP_Clusters_Details"  ./src/sim.o   
+Finished building target: TP_Clusters_Details
+ 
+
+11:57:16 Build Finished (took 2s.911ms)
+

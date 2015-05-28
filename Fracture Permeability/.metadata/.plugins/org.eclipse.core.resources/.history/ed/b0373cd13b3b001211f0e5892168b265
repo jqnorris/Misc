@@ -1,0 +1,21 @@
+/*
+ * Rock.cpp
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+
+#include "Rock.h"
+#include <stdio.h>
+
+Rock::Rock()
+{
+	// TODO Auto-generated constructor stub
+
+}
+
+Rock::~Rock()
+{
+	// TODO Auto-generated destructor stub
+}
+

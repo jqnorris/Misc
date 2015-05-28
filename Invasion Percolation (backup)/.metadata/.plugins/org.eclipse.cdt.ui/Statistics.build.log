@@ -1,0 +1,23 @@
+
+**** Build of configuration Release for project Statistics ****
+
+make all 
+Building file: ../src/statistics/Data.cpp
+Invoking: NVCC Compiler
+nvcc -O3  -odir "src/statistics" -M -o "src/statistics/Data.d" "../src/statistics/Data.cpp"
+nvcc -O3 --compile  -x c++ -o  "src/statistics/Data.o" "../src/statistics/Data.cpp"
+Finished building: ../src/statistics/Data.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: NVCC Compiler
+nvcc -O3  -odir "src" -M -o "src/main.d" "../src/main.cpp"
+nvcc -O3 --compile  -x c++ -o  "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Statistics
+Invoking: NVCC Linker
+nvcc  -link -o  "Statistics"  ./src/statistics/Data.o  ./src/main.o  ./src/includes/simulation/DamageMatrix.o ./src/includes/simulation/Simulation.o  ./src/includes/framework/Matrix.o ./src/includes/framework/Options.o ./src/includes/framework/Pore.o ./src/includes/framework/PoreArray.o ./src/includes/framework/RandKnuth.o ./src/includes/framework/Rock.o ./src/includes/framework/SetupMatrixNeighbors.o ./src/includes/framework/SetupPoreNeighbors.o   
+Finished building target: Statistics
+ 
+
+**** Build Finished ****

@@ -1,0 +1,41 @@
+/*
+ * simulation.cpp
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+#include <iostream>
+#include "framework/Framework.h"
+//#include "simulation/Simulation.h"
+
+using std::cout;
+using std::endl;
+
+int main(void)
+{
+	Options options;
+
+	options.v0 = 10;
+	options.N=4000;
+	options.latticeType=6;
+	options.E0=0;
+	options.epsilonY0=0;
+	options.k0=0;
+	options.phi0=0;
+	options.deltaV0 = 5;
+
+	PoreArray pores(options);
+	Matrix matrix(options);
+	Simulation simulation(pores, matrix, options);
+
+
+	cout << endl << "Beginning Simulation" << endl;
+
+	for(int i=0; i< 100; i++)
+	{
+		simulation.timestep();
+		cout << pores.pores[1][2].currentVolume << endl;
+	}
+
+	return 0;
+}

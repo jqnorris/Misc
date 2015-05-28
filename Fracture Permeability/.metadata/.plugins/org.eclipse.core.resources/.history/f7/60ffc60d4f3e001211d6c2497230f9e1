@@ -1,0 +1,109 @@
+/*
+ * Options.cpp
+ *
+ *  Created on: Nov 29, 2012
+ *      Author: jqnorris
+ */
+
+#include "Options.h"
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+#include <cstdio>
+
+using std::cout;
+using std::endl;
+using std::getline;
+using std::string;
+
+Options::Options()
+{
+
+
+}
+
+Options::~Options()
+{
+
+}
+
+void Options::loadFromFile()
+{
+	int counter=0;
+
+	string test, temp;
+
+	std::ifstream optionsFile("options.in");
+
+	if(optionsFile.good())
+	{
+		cout << endl << "Loading Options File." << endl << endl;
+
+		getline(optionsFile, jobName);
+		cout << "\tOptions for: " << jobName << endl;
+
+		counter++;
+
+		getline(optionsFile, test, '=');
+		if (test == "Volume")
+		{
+			getline(optionsFile, temp);
+			v0 =atoi(temp.c_str());
+			cout << "\tVolume = " << v0<< endl;
+
+			counter++;
+		}
+
+		getline(optionsFile, test, '=');
+		if (test == "N")
+		{
+			getline(optionsFile, temp);
+			v0 =atoi(temp.c_str());
+			cout << "\t N = " << N<< endl;
+
+			counter++;
+		}
+
+		getline(optionsFile, test, '=');
+		if (test == "LatticeType")
+		{
+			getline(optionsFile, temp);
+			latticeType =atoi(temp.c_str());
+			cout << "\t LatticeType = " << v0<< endl;
+
+			counter++;
+		}
+
+		getline(optionsFile, test, '=');
+		if (test == "YoungsModulus")
+		{
+			getline(optionsFile, temp);
+			E0 =atoi(temp.c_str());
+			cout << "\t YoungsModulus = " << v0<< endl;
+
+			counter++;
+		}
+
+		getline(optionsFile, test, '=');
+		if (test == "YieldStrain")
+		{
+			getline(optionsFile, temp);
+			epsilonY0 =atoi(temp.c_str());
+			cout << "\t YieldStrain = " << v0<< endl;
+
+			counter++;
+		}
+
+		getline(optionsFile, test, '=');
+		if (test == "Permability")
+		{
+			getline(optionsFile, temp);
+			epsilonY0 =atoi(temp.c_str());
+			cout << "\t YieldStrain = " << v0<< endl;
+
+			counter++;
+		}
+	}
+
+
+}
